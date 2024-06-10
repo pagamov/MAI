@@ -1,0 +1,170 @@
+%%% пример отчета взян с сайта http://k806.ystok.ru/
+
+\documentclass[15pt]{extarticle}
+
+\usepackage{fullpage}
+\usepackage{multicol,multirow}
+\usepackage{tabularx}
+\usepackage{ulem}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+% margin from paper borders
+\usepackage[margin={0.8in, 0.3in}]{geometry}
+% displaystyle в каждом мас моде
+\everymath{\displaystyle}
+
+\usepackage{titlesec}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection.}{0.3em}{}
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}{\thesubsection.}{0.3em}{}
+
+\titlespacing{\section}{0pt}{*2}{*2}
+\titlespacing{\subsection}{0pt}{*1}{*1}
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+\usepackage{listings}
+\lstloadlanguages{Lisp}
+\lstset{extendedchars=false,
+    breaklines=true,
+    breakatwhitespace=true,
+    keepspaces = true,
+    tabsize=2
+}
+
+
+
+\begin{document}
+
+\section*{Отчет по лабораторной работе №\,5
+по курсу \guillemotleft  Функциональное программирование\guillemotright}
+
+\begin{flushright}
+Студент группы 8О-307 МАИ \textit{Гамов Павел}, \textnumero 4 по списку \\
+\makebox[7cm]{Контакты: {\tt pagamov@gmail.com} \hfill} \\
+\makebox[7cm]{Работа выполнена: 31.05.2021 \hfill} \\
+\ \\
+Преподаватель: Иванов Дмитрий Анатольевич, доц. каф. 806 \\
+\makebox[7cm]{Отчет сдан: \hfill} \\
+\makebox[7cm]{Итоговая оценка: \hfill} \\
+\makebox[7cm]{Подпись преподавателя: \hfill} \\
+
+\end{flushright}
+
+\section{Тема работы}
+Обобщённые функции, методы и классы объектов
+
+\section{Цель работы}
+Научиться определять простейшие классы, порождать экземпляры классов, считывать и изменять значения слотов, научиться определять обобщённые функции и методы.
+
+\section{Задание (вариант № 5.34/2)}
+Объемлющий прямоугольник для геометрической фигуры - это такой, который
+полностью заключает в себе фигуру,
+имеет стороны, параллельные осям координат.
+Пусть класс окружность определён следующим образом:
+
+(defclass circle ()
+
+ ((center :initarg :center :reader center)   ; центр - экземпляр cart или polar
+ 
+  (radius :initarg :radius :reader radius))) ; радиус - число
+  
+Задание: Написать обобщённую функцию и метод, возвращающий список из четырех вершин объемлющего четырёхугольника окружности.
+
+(defgeneric containing-rect (shape))
+
+(defmethod containing-rect ((c circle))
+
+  ...)
+
+\section{Оборудование студента}
+macOS Catalina 10.15.7 Intel Core i5 2.3 GHz 8 ГБ RAM
+
+\section{Программное обеспечение}
+macOS, среда {\tt vim + sbcl}
+
+\section{Идея, метод, алгоритм}
+Написать два класса для разного представления точки, перегрузить функцию print, чтобы она правильно печатала тип cart.  Далее написать главную функцию обрамления окружности.
+
+\section{Сценарий выполнения работы}
+Создаем класс полярных и декартовых координат, делаем перевод из полярных в декартовы с помощью методов класса polar. Далее делаем класс circle, он имеет в себе начальную точку и радиус. Далее пишем метод обрамления круга прямоугольником. Метод простой, начиная с левой верхней точки по часовой стрелке получаем вершины прямоугольника путем сдвига на радиус центральной точки, создаем из этого массив и возвращаем.
+
+\section{Распечатка программы и её результаты}
+
+\subsection{Исходный код}
+
+\begin{lstlisting}
+(defclass circle ()
+ ((center :initarg :center :reader center)
+  (radius :initarg :radius :reader radius)))
+
+(defgeneric containing-rect (shape))
+(defmethod containing-rect ((c circle))
+    (let ((x (cart-x (center c)))
+          (y (cart-y (center c)))
+          (r (radius c)))
+        (list (make-instance 'cart :x (- x r) :y (+ y r))
+              (make-instance 'cart :x (+ x r) :y (+ y r))
+              (make-instance 'cart :x (+ x r) :y (- y r))
+              (make-instance 'cart :x (- x r) :y (- y r)))))
+
+(defclass polar ()
+ ((radius :initarg :radius :accessor radius)
+  (angle  :initarg :angle  :accessor angle)))
+
+(defclass cart ()
+ ((x :initarg :x :reader cart-x)
+  (y :initarg :y :reader cart-y)))
+
+(defmethod cart-x ((p polar))
+  (* (radius p) (cos (angle p))))
+
+(defmethod cart-y ((p polar))
+  (* (radius p) (sin (angle p))))
+
+(defmethod print-object ((c cart) stream)
+  (format stream "[CART x ~d y ~d]"
+          (cart-x c) (cart-y c)))
+
+(print (containing-rect (make-instance 'circle
+           :center (make-instance 'cart :x 4 :y 3)
+           :radius 5)))
+
+(print (containing-rect (make-instance 'circle
+           :center (make-instance 'polar :radius 5 :angle (/ pi 4))
+           :radius 5)))
+\end{lstlisting}
+
+\subsection{Результаты работы}
+
+\begin{lstlisting}
+([CART x -1 y 8] [CART x 9 y 8] [CART x 9 y -2] [CART x -1 y -2]) 
+
+([CART x -1.4644660940672622d0 y 8.535533905932738d0]
+ [CART x 8.535533905932738d0 y 8.535533905932738d0]
+ [CART x 8.535533905932738d0 y -1.4644660940672627d0]
+ [CART x -1.4644660940672622d0 y -1.4644660940672627d0])
+\end{lstlisting}
+
+\section{Дневник отладки}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+Дата     & Событие    & Действие по исправлению   & Примечание \\
+\hline
+& & & \\
+\hline
+\end{tabular}
+
+\section{Замечания автора по существу работы}
+Замечаний не имею.
+
+\section{Выводы}
+В данной работе я познакомился с классами и методами, реализовал несколько классов, научился получать к ним доступ, изменять параметры и писать методы.
+
+\end{document}

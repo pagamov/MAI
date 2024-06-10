@@ -1,0 +1,16 @@
+.DS_Store
+*.odt
+*.pyc
+*liba*.py
+data1
+data2
+data_my
+*.res
+index2.py
+.vscode
+*.crypt
+*.o
+*.so
+NFS
+msieve-1.53
+.ipynb_checkpoints
