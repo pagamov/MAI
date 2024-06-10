@@ -1,0 +1,88 @@
+21
+Ivan
+Petya
+Maxim
+Leha
+Igor
+Lipton
+Illua
+Illidan
+Ursula
+Ded
+Maria
+Rustam
+Zahar
+Jin
+Tom
+Jerry
+Oscar
+Rafaelo
+Anton
+Vsevolod
+Astolfo
+6
+0	0
+1	1
+2	2
+3	3
+4	4
+5	5
+15
+8086	1
+80286	1
+80386	1
+80486	1
+Pen	2
+Pen_Pro	2
+Pen_MMX	3
+Pen_II	3
+Pen_III	4
+Pen_IV	5
+Corei3	5
+Corei5	6
+Corei7	7
+Corei8	8
+Corei9	9
+5
+1	1
+2	1
+4	2
+8	3
+10	4
+4
+IN
+OUT
+AGP
+PCI
+5
+1	1
+2	2
+3	3
+4	4
+5	4
+7
+32  1
+64  2
+128 3
+256 4
+512 5
+1024  6
+2048  7
+4
+1	1
+2	2
+3	3
+4	4
+4
+1	1
+2	2
+3	3
+4	4
+7
+vista	2
+windows7  4
+os	5
+siera	3
+linux	4
+ubuntu	3
+windows10	0
