@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+            .visualy_hidden {
+                visibility: hidden
+            }
+        </style>
+    </head>
+    <body>
+        <div class=visualy_hidden>
+            <!-- <input id="param_input" type="number" min="0"></input> -->
+            <!-- <button id="param_input_button">draw</button> <br> -->
+
+
+            <div>
+                <input id="x_shift_global" type="range" min="-100" max="100" step="1" value="0">
+                x value shift
+            </div>
+
+            <div>
+                <input id="y_shift_global" type="range" min="-100" max="100" step="1" value="0">
+                y value shift <br>
+            </div>
+
+            <div>
+                <input id="x_multiply_global" type="range" min="-5" max="5" step="1" value="1">
+                x multiply shift
+            </div>
+
+            <div>
+                <input id="y_multiply_global" type="range" min="-5" max="5" step="1" value="1">
+                y multiply shift <br>
+            </div>
+
+            <div class="visualy_hidden" id="progres_div">
+
+            </div>
+
+
+        </div>
+
+        <div>
+            <input id="a_global" type="range" min="-250" max="250" step="1" value="50">
+            a value <br>
+        </div>
+        <div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+            <script src="sketch.js"></script>
+        </div>
+    </body>
+</html>
