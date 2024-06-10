@@ -1,0 +1,183 @@
+\section{Описание}
+
+Идея реализации сортировки подсчетом такова: создается дополнительный массив, в котором мы будем записывать колличество каждых элементов, в нашем случае $short\,int$ ключей. Так как мы знаем границы этих чисел, проблем это не составит. Дальше в цикле пробегаем массив ключей и инкрементируем соотвествующее значение в дополнительном массиве. Следующий цикл, добавляем к каждой ячейке $i$ значение ячейки $i - 1$. Проверка правильности выполнения алгоритма: число в последней ячейке является колличестом элементов первоначального массива. Для правильного свапа, в начале функции сортировки обьявляем два дополнительных массива типа $short\,int$ и $char\,*$ размерами с первоначальные. В них мы будем записывать результаты свапа, после чего перепишем их в первоначальные поданные на сортировку массивы. Как итог за 4 цикла мы получаем два отсортированных вектора, которые мы потом переписываем в изначально поданные.
+
+\pagebreak
+
+\section{Исходный код}
+
+Для решения задачи необходимо было написать два класса, вектор для $short\,int$ и для $char\,*$. Их функционал: создание(выделение динамической памяти под структуру с обьявлением локальных переменных), добавление элемента в массив, расширение массива, удаление массива(удаление всех его динамических элементов и освобождения указателя и присвоения ему $NULL$).
+
+Далее следует сама функция сортировки описанная в методе решения. Принимает на вход векторы ключей и значений. Если посмотреть код который я отправил на чекер то там я старался обьяснить каждую сторчку кода, потому, что я, в отличие от остальных, решил писать на чистом Си, что ввиду использования  стрелок $(->)$ при работе с указателями вызывает у читающего код легкий ступор от происходящего.
+
+\begin{lstlisting}[language=C]
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+typedef struct STRING { 
+    char ** array;
+    int size;
+    int vars;
+} STRING;
+
+STRING * create_str (int s) { 
+    STRING * string = (STRING *)malloc(sizeof(STRING));
+    string->array = (char **)malloc(sizeof(char *) * s); 
+    for (int i = 0; i < s; i++)
+        string->array[i] = (char*)malloc(sizeof(char) * 2049); 
+    string->size = s; 
+    string->vars = 0;
+    return string;
+}
+
+STRING * resize_str (STRING * string) { 
+    if (string->size == 0) {  string->size++; } 
+    else  {  string->size *= 2;  } 
+    string->array = (char **)realloc(string->array, sizeof(char *) * string->size); 
+    return string;
+}
+
+STRING * push_str (STRING * string, char * value) { 
+    if (string->size == 0 || string->vars + 1 > string->size)
+        string = resize_str(string); 
+    string->array[string->vars] = (char *)malloc(sizeof(char) * 2049); 
+    strcpy(string->array[string->vars], value); 
+    string->vars++; 
+    return string;
+}
+
+void delete_str (STRING ** string) { 
+    for (int i = 0; i < (*string)->vars; i++)
+        free((*string)->array[i]); 
+    free(((*string)->array)); 
+    free((*string)); 
+    (*string) = NULL;
+}
+
+typedef struct SHINT {
+    int * array;
+    int size;
+    int vars;
+} SHINT;
+
+SHINT * create_arr (int s) {
+    SHINT * arr = (SHINT *)malloc(sizeof(SHINT));
+    arr->array = (int *)malloc(sizeof(int) * s);
+    arr->size = s;
+    arr->vars = 0;
+    return arr;
+}
+
+SHINT * resize_arr (SHINT * arr) { 
+    if (arr->size == 0) {  arr->size++; } 
+    else  {  arr->size *= 2;  } 
+    arr->array = (int *)realloc(arr->array, sizeof(int) * arr->size); 
+    return arr;
+}
+
+SHINT * push_arr (SHINT * arr, int value) { 
+    if (arr->size == 0 || arr->vars + 1 > arr->size)
+        arr = resize_arr(arr); 
+    arr->array[arr->vars] = value; 
+    arr->vars++; 
+    return arr;
+}
+
+void delete_arr (SHINT ** arr) { 
+    free(((*arr)->array)); 
+    (*arr)->array = NULL; 
+    free(*arr); 
+    *arr = NULL; 
+}
+
+void stableString(SHINT * v, STRING * s) {
+    int max = 65536;
+    SHINT * c = create_arr(0); 
+    SHINT * b = create_arr(0); 
+    STRING * bb = create_str(0); 
+    for (int i = 0; i < max; i++)
+        push_arr(c, 0); 
+    for (int i = 0; i < v->vars; i++) {
+        c->array[v->array[i]] += 1; 
+        push_arr(b, 0); 
+        push_str(bb, ""); 
+    }
+    for (int i = 1; i < max; i++)
+        c->array[i] = c->array[i] + c->array[i - 1]; 
+    for (int i = v->vars - 1; i > -1; i--) {
+        c->array[v->array[i]] = c->array[v->array[i]] - 1;
+        b->array[c->array[v->array[i]]] = v->array[i];
+        strcpy(bb->array[c->array[v->array[i]]], s->array[i]); 
+    }
+    for (int i = 0; i < v->vars; i++) { 
+        v->array[i] = b->array[i];
+        strcpy(s->array[i], bb->array[i]);
+    }
+    delete_arr(&c);
+    delete_arr(&b);
+    delete_str(&bb);
+}
+
+int main(void) {
+    SHINT * arr = create_arr(0); 
+    STRING * string = create_str(0); 
+    int d; 
+    char * s = (char *)malloc(sizeof(char) * 2049); 
+    while (scanf("%d\t%s", &d, s) == 2) { 
+        if (d >= 0 && d <= 65535) { 
+            push_arr(arr, d);
+            push_str(string, s);
+        }
+    }
+    free(s); 
+    stableString(arr, string); 
+    for (int i = 0; i < arr->vars; i++) 
+        printf("%d\t%s\n", arr->array[i], string->array[i]);
+    delete_arr(&arr); 
+    delete_str(&string); 
+    return 0;
+}
+\end{lstlisting}
+
+\pagebreak
+
+\section{Консоль}
+\begin{alltt}
+MacBook-Pro-Pavel:1lab pavelgamov\$ gcc -pedantic -Wall -std=c99 \newline -Werror -Wno-sign-compare -lm main.c -o prog
+MacBook-Pro-Pavel:1lab pavelgamov\$ cat test.txt 
+999 hellopapapa_adfadf
+0   hellllooasowewecsadf
+4	11f2erbiuebri123uerbi2ebiberibier
+1	aaaa
+65535	vls
+1234	qerqefd
+
+65535	anodtherone
+808 bassszzz
+777 space
+1233    space_here_dude
+3256432  wefsgdhnsearf
+
+-10 fsdbfgds
+MacBook-Pro-Pavel:1lab pavelgamov\$ ./prog < test.txt 
+0	hellllooasowewecsadf
+1	aaaa
+4	11f2erbiuebri123uerbi2ebiberibier
+777	space
+808	bassszzz
+999	hellopapapa_adfadf
+1233	space_here_dude
+1234	qerqefd
+65535	vls
+65535	anodtherone
+\end{alltt}
+
+% 1-5 Попытки: ошибка компиляции ввиду неэффективного и неправильного кода в классах векторов $short int$ и $char *$.
+
+% 6 - 10 Попытки: дошел до прошел тест 4, оказывается верхняя планка по размеру значения 2048 чаров берется включительно, увеличил до 2049 и дошел до 11 теста где чекер показывал неправильный ответ.
+
+% 11 - 16 Попытки: изменил $short int$ на $int$ и ввел проверку на границы входных данных вручную. Теперь если инт не входит в данное значение от $0$ до $65535$ включительно, то элементы просто не добавляются. Также заменил цикл $while$, при считывании теперь он будет проверят кол-во полученных значений и если оно не равно двум, что включает в себя также условия конца файла $(EOF)$, то считывание заканчивается и программа начинает сортировать полученные векторы. С другой стороны это не обрабатывает введение пустых строк, но от подачи неполных данных спасает. Программа зашла на чекер.%
+
+
+\pagebreak

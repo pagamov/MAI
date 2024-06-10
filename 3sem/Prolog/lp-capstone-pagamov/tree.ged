@@ -1,0 +1,3127 @@
+0 HEAD
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 CHAR UTF-8
+1 LANG Russian
+1 SOUR MYHERITAGE
+2 NAME MyHeritage Family Tree Builder
+2 VERS 5.5.1
+2 _RTLSAVE RTL
+2 CORP MyHeritage.com
+1 DEST MYHERITAGE
+1 DATE 08 OCT 2019
+1 FILE Exported by MyHeritage.com from Alex_Masha_Gamov in Семья Гамовых on Tue, 08 Oct 2019
+1 _PROJECT_GUID 684523F4-E9C7-4A7A-8B92-EA3E648CD82A
+1 _EXPORTED_FROM_SITE_ID 137829811
+0 @I1@ INDI
+1 _UPD 6 MAY 2018 13:17:22 GMT -0500
+1 NAME Александр Игоревич /Гамов/
+2 GIVN Александр Игоревич
+2 SURN Гамов
+2 _FORMERNAME Гершман
+1 SEX M
+1 BIRT
+2 DATE 19 JUL 1977
+2 PLAC г.Тюмень, Россия
+1 EDUC Высшее
+2 DATE 1994-1999гг
+2 PLAC Московский Институт Электронной Техники (МИЭТ), г. Зеленоград
+2 NOTE Инженер
+1 RELI Православный
+1 NATI Россия
+1 DSCR <DSCR><EYES>Зеленый</EYES><WEIGHT>90 кг</WEIGHT><HEIGHT>187 см</HEIGHT></DSCR>
+1 RESI
+2 NOTE Current address:1
+2 ADDR
+3 ADR1 Петровско-разумовский проезд, д.24, корпус 19, кв.242
+3 CITY Москва
+3 CTRY Россия
+3 STAE Россия
+3 POST 127287
+1 RESI
+2 PHON +7(916)585-8008
+1 RESI
+2 EMAIL alex_gamov@@rambler.ru
+1 RESI
+2 EMAIL alexander.gamov@@mail.ru
+1 OCCU
+2 DATE FROM 10 NOV 2015
+2 NOTE Current occupation:1
+1 EVEN Russian, English
+2 TYPE Language spoken
+1 RESI
+2 WWW :%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80+%D0%93%D0%B0%D0%BC%D0%BE%D0%B2 %D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80+%D0%93%D0%B0%D0%BC%D0%BE%D0%B2
+1 FAMS @F1@
+1 FAMC @F2@
+1 RIN MH:I1
+1 _UID 7F06A45A-961D-47EB-BA32-F64FE79F316D
+0 @I2@ INDI
+1 _UPD 8 SEP 2018 04:19:10 GMT -0500
+1 NAME Мария Игоревна /Солошенко/
+2 GIVN Мария Игоревна
+2 SURN Солошенко
+2 _MARNM Гамова
+1 SEX F
+1 BIRT
+2 DATE 14 JUN 1982
+2 PLAC г.Кемерово, Россия
+1 RESI
+2 ADDR
+3 ADR1 Петровско-разумовский проезд, д.24, корпус 19, кв. 242
+3 CITY Москва
+3 CTRY Россия
+1 RESI
+2 EMAIL maria.gamova@@mail.ru
+1 NATI Россия
+1 RELI Христианин
+1 RESI
+2 PHON +7(915)359-1215
+1 OCCU Домохозяйка
+2 NOTE Current occupation:1
+1 EDUC Высшее
+1 EVEN Психология
+2 TYPE Hobbies
+1 EVEN Плавания
+2 TYPE Sports
+1 EVEN Russian, English
+2 TYPE Language spoken
+1 FAMS @F1@
+1 FAMC @F11@
+1 RIN MH:I2
+1 _UID 5775A5BA-D9CD-40AB-A9A1-642023AAA05D
+0 @I3@ INDI
+1 _UPD 6 MAY 2018 13:21:04 GMT -0500
+1 NAME Марк Александрович /Гамов/
+2 GIVN Марк Александрович
+2 SURN Гамов
+1 SEX M
+1 BIRT
+2 DATE 23 AUG 2004
+2 PLAC г. Зеленоград, Москва
+1 RESI
+2 NOTE Current address:1
+2 ADDR
+3 ADR1 Петровско-разумовский проезд, д.24, корпус 19, кв. 242
+3 CITY Москва
+3 CTRY Россия
+1 RESI
+2 EMAIL mark.gamov04@@mail.ru
+1 RESI
+2 EMAIL mark.gamov@@rambler.ru
+1 RESI
+2 EMAIL mark.gamov2015@@yandex.ru
+1 RESI
+2 PHON +7 (915) 044-43-74
+1 FAMC @F1@
+1 RIN MH:I3
+1 _UID DA384628-4553-40BC-A8A7-E3C3F26D5C51
+0 @I4@ INDI
+1 _UPD 8 SEP 2018 04:16:24 GMT -0500
+1 NAME Филипп Александрович /Гамов/
+2 GIVN Филипп Александрович
+2 SURN Гамов
+1 SEX M
+1 BIRT
+2 DATE 4 AUG 2009
+2 PLAC г.Красногорск, Московская область, Россия
+1 RESI
+2 NOTE Current address:1
+2 ADDR
+3 ADR1 Петровско-разумовский проезд, д.24, корпус 19, кв. 242
+3 CITY Москва
+3 CTRY Россия
+1 NATI Россия
+1 RELI Православный
+1 FAMC @F1@
+1 RIN MH:I4
+1 _UID 056919FE-D588-4DCD-B9D8-19DE899616D1
+0 @I5@ INDI
+1 _UPD 25 JUN 2011 09:29:52 GMT -0500
+1 NAME Игорь Павлович /Гершман/
+2 GIVN Игорь Павлович
+2 SURN Гершман
+1 SEX M
+1 BIRT
+2 DATE 7 DEC 1937
+2 PLAC г.Белгород (Россия, Курская область (бывшая))
+1 FAMS @F2@
+1 FAMC @F6@
+1 RIN MH:I5
+1 _UID A357333B-B0AF-4F80-98E1-8ED8F13A2179
+0 @I6@ INDI
+1 _UPD 20 MAY 2013 20:25:14 GMT -0500
+1 NAME Нина Михайловна /Гамова/
+2 GIVN Нина Михайловна
+2 SURN Гамова
+2 _MARNM Гамова
+1 SEX F
+1 BIRT
+2 DATE 12 SEP 1941
+2 PLAC г.Ефремов, Тульская область, Россия
+1 RESI
+2 ADDR
+3 ADR1 ул. 2-я Северная, д.1в
+3 CITY Озеры
+3 CTRY Россия
+1 OCCU Пенсионер
+2 NOTE Current occupation:1
+1 RELI Православный
+1 NATI Российская Федерация
+1 EVEN Russian
+2 TYPE Language spoken
+1 FAMS @F2@
+1 FAMC @F3@
+1 RIN MH:I6
+1 _UID 7007CB14-3696-431D-8EAE-99BC97E8E340
+0 @I7@ INDI
+1 _UPD 21 NOV 2015 18:10:41 GMT -0500
+1 NAME Антон Игоревич /Гамов/
+2 GIVN Антон Игоревич
+2 SURN Гамов
+2 _FORMERNAME Гершман
+1 SEX M
+1 BIRT
+2 DATE 19 JUL 1977
+2 PLAC г.Тюмень, Россия
+1 EDUC Высшее
+2 DATE 30 JUN 1999
+2 PLAC Московский Институт Электронной Техники (Технический Университет)
+2 AGE 21
+1 RELI Православный
+1 NATI Россия
+1 RESI
+2 EMAIL himaua@@rambler.ru
+1 FAMS @F5@
+1 FAMC @F2@
+1 RIN MH:I7
+1 _UID C47A78A3-D152-46EB-8E1E-6EDB6D4F277B
+0 @I8@ INDI
+1 _UPD 6 OCT 2019 10:04:53 GMT -0500
+1 NAME Екатерина Игоревна /Гершман/
+2 GIVN Екатерина Игоревна
+2 SURN Гершман
+1 SEX F
+1 BIRT
+2 DATE 24 APR 1973
+2 PLAC г.Тюмень, Россия
+1 RESI
+2 EMAIL gershman-katerina@@yandex.ru
+1 FAMC @F2@
+1 RIN MH:I8
+1 _UID 215D5916-6D44-4698-A839-78088515DC87
+0 @I9@ INDI
+1 _UPD 12 DEC 2010 09:53:52 GMT -0500
+1 NAME Михаил Иванович /Гамов/
+2 GIVN Михаил Иванович
+2 SURN Гамов
+1 SEX M
+1 BIRT
+2 DATE 5 NOV 1914
+2 PLAC деревня Козлеевка Елецкий район, Липецкая область, Россия
+1 DEAT Y
+2 DATE 5 JAN 2000
+2 PLAC г. Ефремов, Тульская область, Россия
+2 AGE 85
+2 CAUS Инсульт
+1 BURI
+2 PLAC г. Ефремов, Тульская область, Россия
+1 FAMS @F3@
+1 FAMC @F7@
+1 RIN MH:I9
+1 _UID D8CDB054-9EA9-4FE9-A276-CADE36A2EA08
+0 @I10@ INDI
+1 _UPD 25 JUN 2011 14:34:36 GMT -0500
+1 NAME Антонина Васильевна /Ходорева/
+2 GIVN Антонина Васильевна
+2 SURN Ходорева
+2 _MARNM Гамова
+1 SEX F
+1 BIRT
+2 DATE 31 MAY 1919
+2 PLAC Деревня Хмелевая, Ефремовского района, Тульская область, Россия
+1 DEAT Y
+2 DATE 5 APR 1998
+2 PLAC г.Ефремов, Тульская область, Россия
+2 AGE 78
+2 CAUS Рак
+1 BURI
+2 PLAC г.Ефремов, Тульская область, Россия
+1 RELI Православный
+1 NATI СССР
+1 FAMS @F3@
+1 FAMC @F8@
+1 RIN MH:I10
+1 _UID CB47A2FA-EBC7-4066-9086-81EF48DF083B
+0 @I11@ INDI
+1 _UPD 6 OCT 2019 10:01:56 GMT -0500
+1 NAME Нонна Михайловна /Гамова/
+2 GIVN Нонна Михайловна
+2 SURN Гамова
+1 SEX F
+1 BIRT
+2 DATE 7 FEB 1946
+2 PLAC г. Ефремов, Тульская область, Россия
+1 FAMC @F3@
+1 RIN MH:I11
+1 _UID 64C2D9E3-4A13-4F4C-ACD1-5557B5436155
+0 @I12@ INDI
+1 _UPD 8 MAY 2018 01:06:25 GMT -0500
+1 NAME Римма Михайловна /Гамова/
+2 GIVN Римма Михайловна
+2 SURN Гамова
+2 _MARNM Гурьева
+1 SEX F
+1 BIRT
+2 DATE 19 MAY 1954
+2 PLAC г. Ефремов, Тульская область, Россия
+1 RELI Православный
+1 NATI Россия
+1 EVEN Russian
+2 TYPE Language spoken
+1 OCCU Бухгалтер
+1 FAMS @F4@
+1 FAMC @F3@
+1 RIN MH:I12
+1 _UID 8B9EA2A7-EAE2-4CC6-8EE4-1504369FE6C8
+0 @I13@ INDI
+1 _UPD 25 JUN 2011 14:37:36 GMT -0500
+1 NAME Геннадий Моисеевич /Гурьев/
+2 GIVN Геннадий Моисеевич
+2 SURN Гурьев
+1 SEX M
+1 BIRT
+2 DATE 3 JAN 1954
+1 FAMS @F4@
+1 FAMC @F15@
+1 RIN MH:I13
+1 _UID 9051A658-880A-46D5-84C9-C75C86A0BF1F
+0 @I14@ INDI
+1 _UPD 6 OCT 2019 10:10:41 GMT -0500
+1 NAME Маргарита Геннадьевна /Гурьева/
+2 GIVN Маргарита Геннадьевна
+2 SURN Гурьева
+1 SEX F
+1 BIRT
+2 DATE 4 SEP 1977
+2 PLAC г.Коломна, Московская область, Россия
+1 RESI
+2 EMAIL margarita.guryeva@@gmail.com
+1 FAMS @F500027@
+1 FAMC @F4@
+1 RIN MH:I14
+1 _UID 0EA36E2C-57B9-409A-B0E2-C650D94CDC04
+0 @I15@ INDI
+1 _UPD 6 OCT 2019 10:06:29 GMT -0500
+1 NAME Максим Геннадьевич /Гурьев/
+2 GIVN Максим Геннадьевич
+2 SURN Гурьев
+1 SEX M
+1 BIRT
+2 DATE 06.07.1987
+2 PLAC г.Коломна, Московская область, Россия
+1 RESI
+2 EMAIL flexo4@@yandex.ru
+1 FAMS @F500026@
+1 FAMC @F4@
+1 RIN MH:I15
+1 _UID 8347EA85-D57C-4C45-9F52-50FD4E0E6B4E
+0 @I16@ INDI
+1 _UPD 6 OCT 2019 10:00:30 GMT -0500
+1 NAME Ольга Алексеевна /Селезнева/
+2 GIVN Ольга Алексеевна
+2 SURN Селезнева
+2 _MARNM Гамова
+1 SEX F
+1 BIRT
+2 DATE 4 NOV 1976
+2 PLAC г.Коломна, Московская область, Россия
+1 FAMS @F5@
+1 FAMC @F13@
+1 RIN MH:I16
+1 _UID 7797FCE1-BBBA-45D0-9231-80799BFC3C64
+0 @I17@ INDI
+1 _UPD 6 OCT 2019 10:04:33 GMT -0500
+1 NAME Павел Антонович /Гамов/
+2 GIVN Павел Антонович
+2 SURN Гамов
+1 SEX M
+1 BIRT
+2 DATE 5 JUN 2000
+2 PLAC г.Коломна, Московская область, Россия
+1 RESI
+2 EMAIL pagamov@@gmail.com
+1 RESI
+2 ADDR
+3 CITY Котельники
+3 CTRY Россия
+1 FAMC @F5@
+1 RIN MH:I17
+1 _UID D7F8107D-2CEC-4F4D-8E07-504B2845FD14
+0 @I18@ INDI
+1 _UPD 6 OCT 2019 10:05:13 GMT -0500
+1 NAME Марина Антоновна /Гамова/
+2 GIVN Марина Антоновна
+2 SURN Гамова
+1 SEX F
+1 BIRT
+2 DATE 23 JUN 2004
+2 PLAC г.Коломна, Московская область, Россия
+1 FAMC @F5@
+1 RIN MH:I18
+1 _UID 4969BC31-E2C6-4F71-90AA-AC8BA4ED4DA8
+0 @I19@ INDI
+1 _UPD 18 OCT 2015 15:03:03 GMT -0500
+1 NAME Павел Исаевич /Гершман/
+2 GIVN Павел Исаевич
+2 SURN Гершман
+1 SEX M
+1 BIRT
+1 DEAT Y
+2 PLAC г. Улан-Уде, Бурятия
+1 BURI
+2 PLAC г. Улан-Уде, Бурятия
+1 FAMS @F6@
+1 FAMC @F27@
+1 NOTE Дедушка "Паша". Отец (отчим) Гершману Игорю Павловичу.
+1 RIN MH:I19
+1 _UID E4F0C1E7-48E8-46CF-A8EC-A0FF820D9965
+0 @I20@ INDI
+1 _UPD 18 OCT 2015 15:03:14 GMT -0500
+1 NAME Галина Васильевна /Бронникова/
+2 GIVN Галина Васильевна
+2 SURN Бронникова
+2 _MARNM Гершман
+1 SEX F
+1 BIRT
+2 DATE 31 OCT 1919
+2 PLAC г.Солнцево (Станция "Солнцево", Курской губернии)
+1 DEAT Y
+2 PLAC г. Улан-Уде, Бурятия
+1 BURI
+2 PLAC г. Улан-Уде, Бурятия
+1 FAMS @F6@
+1 FAMC @F16@
+1 RIN MH:I20
+1 _UID BFFB8671-26CA-49C2-B86C-9A8202C8756F
+0 @I21@ INDI
+1 _UPD 6 MAY 2018 13:19:45 GMT -0500
+1 NAME Олег Павлович /Гершман/
+2 GIVN Олег Павлович
+2 SURN Гершман
+1 SEX M
+1 BIRT
+2 DATE 9 MAR 1940
+2 PLAC г.Улан-Удэ, Бурятия, Россия
+1 RESI
+2 ADDR
+3 CITY г.Улан-Удэ
+3 CTRY Россия
+3 STAE Бурятия
+1 DEAT Y
+2 PLAC г.Улан-Удэ, Бурятия, Россия
+2 CAUS Болезнь
+1 BURI
+2 PLAC г. Улан-Уде, Бурятия
+1 FAMS @F23@
+1 FAMC @F6@
+1 RIN MH:I21
+1 _UID 6C124905-1DF2-4FBD-8BE8-D87995FD41B7
+0 @I22@ INDI
+1 _UPD 25 JUN 2011 09:41:19 GMT -0500
+1 NAME Людмила Павловна /Гершман/
+2 GIVN Людмила Павловна
+2 SURN Гершман
+2 _MARNM Пономарева
+1 SEX F
+1 BIRT
+2 DATE 11 APR 1942
+2 PLAC село "Баргузин", Бурят-монгольской АССР
+1 EDUC среднее
+1 RESI
+2 ADDR
+3 ADR1 Мецада 91, кв.35
+3 CITY Беер-шева
+3 CTRY Израиль
+1 FAMS @F24@
+1 FAMC @F6@
+1 RIN MH:I22
+1 _UID 61DE7812-E02A-4F28-8DCB-393F7D8067AC
+0 @I23@ INDI
+1 _UPD 12 DEC 2010 09:56:58 GMT -0500
+1 NAME Иван Петрович /Гамов/
+2 GIVN Иван Петрович
+2 SURN Гамов
+1 SEX M
+1 BIRT
+2 DATE 1 JAN 1889
+2 PLAC деревня Козлеевка Елецкий район, Липецкая область, Россия
+1 DEAT Y
+2 DATE 27 AUG 1977
+2 AGE 88
+1 FAMS @F7@
+1 FAMC @F31@
+1 RIN MH:I23
+1 _UID 725AF29A-B733-424A-A19A-D1DC6177DBA5
+0 @I24@ INDI
+1 _UPD 12 DEC 2010 09:58:03 GMT -0500
+1 NAME Анисья Ивановна /Неделина/
+2 GIVN Анисья Ивановна
+2 SURN Неделина
+2 _MARNM Гамова
+1 SEX F
+1 BIRT
+2 DATE 12 JAN 1894
+2 PLAC Неизвестно (предполодительно станция "Становая", Елецкого района, Россия)
+1 DEAT Y
+2 DATE 3 MAR 1959
+2 PLAC г.Ефремов, Тульская область, Россия
+2 AGE 65
+1 FAMS @F7@
+1 FAMC @F30@
+1 RIN MH:I24
+1 _UID 8EFA8081-4694-4E3B-A91E-7EAA1F850D3C
+0 @I25@ INDI
+1 _UPD 12 DEC 2010 10:03:35 GMT -0500
+1 NAME Василий Егорович /Ходорев/
+2 GIVN Василий Егорович
+2 SURN Ходорев
+1 SEX M
+1 BIRT
+1 DEAT Y
+2 DATE 5 JAN 1938
+2 PLAC Неизвестно (расстрелян, предположительно на Беломорканале)
+1 FAMS @F8@
+1 FAMC @F35@
+1 NOTE Информацию можно уточнить у Дяди Славы
+1 RIN MH:I25
+1 _UID 0C4C847F-0CC9-4AA6-8F60-35572017ECC6
+0 @I26@ INDI
+1 _UPD 12 DEC 2010 10:04:01 GMT -0500
+1 NAME Елизавета Андреевна /Неизвестна/
+2 GIVN Елизавета Андреевна
+2 SURN Неизвестна
+2 _MARNM Ходорева
+1 SEX F
+1 BIRT
+2 PLAC Деревня "Воронья", Ефремовский район, Тульская область, Россия
+1 DEAT Y
+1 FAMS @F8@
+1 NOTE Недостающую информацию можно уточнить у Дяди Славы
+1 RIN MH:I26
+1 _UID 4C7F3963-F609-4606-8E62-01E054C8EF74
+0 @I27@ INDI
+1 _UPD 25 JUN 2011 14:43:22 GMT -0500
+1 NAME Мария Ивановна /Гамова/
+2 GIVN Мария Ивановна
+2 SURN Гамова
+2 _MARNM Руднева
+1 SEX F
+1 BIRT
+1 FAMS @F9@
+1 FAMC @F7@
+1 NOTE Со слов Гамовой Нины Михайловны, тетя Маруся сестра дедушки Мишы (Гамов Михаил Иванович). Они вместе покупали
+2 CONC дом на поселке в г.Ефремов, жили какое-то время вместе в этом доме (две семьи), потом тетя Маруся с семьей уехал
+2 CONC  в г.Уфа (на Урале). Моя мама (Гамова Н.И.) после войны 1941-45гг какое-то время жила и г.Уфа и помнит это время.
+1 RIN MH:I27
+1 _UID CA91BDFF-A5F9-4F9F-BA6D-7933DB7DD4C1
+0 @I28@ INDI
+1 _UPD 20 JUN 2011 17:13:52 GMT -0500
+1 NAME Пётр /Руднев/
+2 GIVN Пётр
+2 SURN Руднев
+1 SEX M
+1 BIRT
+1 FAMS @F9@
+1 RIN MH:I28
+1 _UID 731F628F-97F2-40CB-A2D2-9EF64E667975
+0 @I29@ INDI
+1 _UPD 25 JUN 2011 14:44:35 GMT -0500
+1 NAME Анатолий Петрович /Руднев/
+2 GIVN Анатолий Петрович
+2 SURN Руднев
+1 SEX M
+1 BIRT
+2 DATE 1935г (примерно)
+1 RESI
+2 ADDR
+3 CITY Уфа
+3 CTRY Россия
+1 FAMS @F10@
+1 FAMC @F9@
+1 RIN MH:I29
+1 _UID 92217DB1-90EB-471B-A678-13FC4DD8CA75
+0 @I30@ INDI
+1 _UPD 25 JUN 2011 14:46:34 GMT -0500
+1 NAME Виталий Петрович /Руднев/
+2 GIVN Виталий Петрович
+2 SURN Руднев
+1 SEX M
+1 BIRT
+2 DATE 1939г (примерно)
+1 FAMC @F9@
+1 RIN MH:I30
+1 _UID A55098F6-F93E-4F16-8AEA-91DD9D897175
+0 @I31@ INDI
+1 _UPD 25 JUN 2011 14:43:51 GMT -0500
+1 NAME Октябрина //
+2 GIVN Октябрина
+2 _MARNM Руднева
+1 SEX F
+1 BIRT
+1 FAMS @F10@
+1 RIN MH:I31
+1 _UID FB6E11BA-D4D6-4F2C-81E2-AE4E09F11305
+0 @I32@ INDI
+1 _UPD 25 JUN 2011 14:45:22 GMT -0500
+1 NAME Марина Анатольевна /Руднева/
+2 GIVN Марина Анатольевна
+2 SURN Руднева
+1 SEX F
+1 BIRT
+1 RESI
+2 ADDR
+3 CITY Уфа
+3 CTRY Россия
+1 RESI
+2 PHON +7-917-472-7454
+1 FAMC @F10@
+1 NOTE Я Гамов Александр Игоревич, познакомился с Мариной Рудневой 20.06.2011г в г.Москве (по телефону). Она приехала в Мо
+2 CONC кву со своим сыном на учебу (повышение квалификации). Живет в гостинице на м.Выхино
+1 RIN MH:I32
+1 _UID 628E1DC5-192F-473C-A45F-FC4AE8E28139
+0 @I33@ INDI
+1 _UPD 8 MAY 2018 00:49:52 GMT -0500
+1 NAME Игорь Александрович /Солошенко/
+2 GIVN Игорь Александрович
+2 SURN Солошенко
+1 SEX M
+1 BIRT
+2 DATE 28 MAY 1959
+2 PLAC Киргизия, г.Талас
+1 RESI
+2 ADDR
+3 ADR1 Кронштадский бульвар
+3 CITY Москва
+3 CTRY Россия
+1 NATI Россия
+1 RELI Православный
+1 RESI
+2 EMAIL igor.soloshenko@@mail.ru
+1 FAMS @F11@
+1 FAMC @F53@
+1 RIN MH:I33
+1 _UID C59880C4-D295-4E1C-953F-023CCA09DD2E
+0 @I34@ INDI
+1 _UPD 18 OCT 2015 13:37:03 GMT -0500
+1 NAME Ирина Львовна /Канунникова/
+2 GIVN Ирина Львовна
+2 SURN Канунникова
+2 _MARNM Солошенко
+1 SEX F
+1 BIRT
+2 DATE 7 JUN 1962
+1 RESI
+2 EMAIL irina.soloshenko@@rambler.ru
+1 FAMS @F11@
+1 FAMC @F12@
+1 RIN MH:I34
+1 _UID 8536F341-D72F-4FB0-B71F-172D5D1622D3
+0 @I35@ INDI
+1 _UPD 17 OCT 2015 10:18:43 GMT -0500
+1 NAME Лев Владимирович /Канунников/
+2 GIVN Лев Владимирович
+2 SURN Канунников
+1 SEX M
+1 BIRT
+2 DATE 31 JAN 1932
+2 PLAC Петропавловск Камчатский
+1 DEAT Y
+2 DATE 6 OCT 2015
+2 PLAC МО, Клинский район, д.Горки
+2 AGE 83
+1 FAMS @F12@
+1 FAMC @F51@
+1 RIN MH:I35
+1 _UID 2F0F8225-2DF7-4185-A373-2389BA917C1F
+0 @I36@ INDI
+1 _UPD 18 OCT 2015 13:36:29 GMT -0500
+1 NAME Игорь Игоревич /Солошенко/
+2 GIVN Игорь Игоревич
+2 SURN Солошенко
+1 SEX M
+1 BIRT
+2 DATE 18 OCT 1987
+2 PLAC г. Ташкент
+1 RESI
+2 EMAIL satang.ru@@gmail.com
+1 RESI
+2 EMAIL igorsecond@@gmail.com
+1 RESI
+2 EMAIL igorthisiswine@@gmail.com
+1 OCCU Предприниматель
+2 NOTE Current occupation:1
+1 FAMS @F54@
+1 FAMC @F11@
+1 RIN MH:I36
+1 _UID 2F4D5B9E-A2BD-4879-B872-1CFF36F6B7F7
+0 @I37@ INDI
+1 _UPD 20 MAY 2013 20:31:10 GMT -0500
+1 NAME Алексей /Селезнев/
+2 GIVN Алексей
+2 SURN Селезнев
+1 SEX M
+1 BIRT
+1 DEAT Y
+2 PLAC г.Коломна, Московская область, Россия
+1 FAMS @F13@
+1 RIN MH:I37
+1 _UID AB50F33A-0687-43D1-8EC0-40BDCEE2F3D3
+0 @I38@ INDI
+1 _UPD 20 MAY 2013 20:31:22 GMT -0500
+1 NAME Татьяна //
+2 GIVN Татьяна
+2 _MARNM Селезнева
+1 SEX F
+1 BIRT
+1 DEAT Y
+2 PLAC г.Коломна, Московская область, Россия
+1 FAMS @F13@
+1 FAMC @F14@
+1 RIN MH:I38
+1 _UID 8E5B7406-564C-46EC-84CD-784E243FD64E
+0 @I39@ INDI
+1 _UPD 20 JUN 2011 20:57:39 GMT -0500
+1 NAME Иван //
+2 GIVN Иван
+1 SEX M
+1 BIRT
+1 FAMS @F14@
+1 RIN MH:I39
+1 _UID 5E8E15BA-AE6F-4100-B272-9446AF3572B9
+0 @I40@ INDI
+1 _UPD 20 JUN 2011 21:05:27 GMT -0500
+1 NAME Моисей /Гурьев/
+2 GIVN Моисей
+2 SURN Гурьев
+1 SEX M
+1 BIRT
+1 FAMS @F15@
+1 RIN MH:I40
+1 _UID 066EE887-AB0B-43CC-8198-1AA644CB3EEB
+0 @I41@ INDI
+1 _UPD 25 JUN 2011 14:48:05 GMT -0500
+1 NAME Николай Иванович /Гамов/
+2 GIVN Николай Иванович
+2 SURN Гамов
+1 SEX M
+1 BIRT
+1 FAMS @F32@
+1 FAMC @F7@
+1 RIN MH:I41
+1 _UID D386BD6C-5170-4DCA-B1B0-8B24FA257D15
+0 @I42@ INDI
+1 _UPD 25 JUN 2011 14:48:57 GMT -0500
+1 NAME Иван Иванович /Гамов/
+2 GIVN Иван Иванович
+2 SURN Гамов
+1 SEX M
+1 BIRT
+1 FAMC @F7@
+1 RIN MH:I42
+1 _UID C5EB87C7-0E73-4BCC-9DEA-D918ABBC94A3
+0 @I43@ INDI
+1 _UPD 25 JUN 2011 09:20:50 GMT -0500
+1 NAME Василий Иванович /Бронников/
+2 GIVN Василий Иванович
+2 SURN Бронников
+1 SEX M
+1 BIRT
+1 FAMS @F16@
+1 FAMS @F21@
+1 FAMC @F17@
+1 RIN MH:I43
+1 _UID E506015D-E6BA-43CE-BDFF-AFBBAC914029
+0 @I44@ INDI
+1 _UPD 25 JUN 2011 09:08:54 GMT -0500
+1 NAME Иван /Бронников/
+2 GIVN Иван
+2 SURN Бронников
+1 SEX M
+1 BIRT
+1 FAMS @F17@
+1 RIN MH:I44
+1 _UID 0192A564-D5ED-434B-AF5A-C41C2A48FF7C
+0 @I45@ INDI
+1 _UPD 27 JAN 2019 05:06:51 GMT -0500
+1 NAME Екатерина Васильевна /Виноградова/
+2 GIVN Екатерина Васильевна
+2 SURN Виноградова
+2 _MARNM Бронникова
+1 SEX F
+1 BIRT
+1 FAMS @F16@
+1 FAMC @F18@
+1 NOTE Принадлежит в семье графов Виноградовых. Подробности - у Папы (Гершмана Игоря Павловича)
+1 RIN MH:I45
+1 _UID C254F7E9-2676-4AD3-87EF-D6CD52AF1228
+0 @I46@ INDI
+1 _UPD 25 JUN 2011 09:23:39 GMT -0500
+1 NAME Василий Иванович /Виноградов/
+2 GIVN Василий Иванович
+2 SURN Виноградов
+1 SEX M
+1 BIRT
+1 FAMS @F18@
+1 FAMC @F19@
+1 RIN MH:I46
+1 _UID D764517E-2B99-4AB9-AACC-DAC0F32E298D
+0 @I47@ INDI
+1 _UPD 25 JUN 2011 09:24:25 GMT -0500
+1 NAME Сергей Васильевич /Виноградов/
+2 GIVN Сергей Васильевич
+2 SURN Виноградов
+1 SEX M
+1 BIRT
+1 FAMC @F18@
+1 RIN MH:I47
+1 _UID 5D637050-8919-403A-89C3-6724FFEE9418
+0 @I48@ INDI
+1 _UPD 25 JUN 2011 09:12:05 GMT -0500
+1 NAME Иван /Виноградов/
+2 GIVN Иван
+2 SURN Виноградов
+1 SEX M
+1 BIRT
+1 FAMS @F19@
+1 RIN MH:I48
+1 _UID DF5F3FC1-7E43-4A37-A359-FA5B27271BC3
+0 @I50@ INDI
+1 _UPD 25 JUN 2011 09:24:57 GMT -0500
+1 NAME Елизавета Васильевна /Виноградова/
+2 GIVN Елизавета Васильевна
+2 SURN Виноградова
+2 _MARNM Бронникова
+1 SEX F
+1 BIRT
+1 FAMS @F21@
+1 FAMC @F18@
+1 NOTE Елизавета Виноградова была замужем за Василием Ивановичем Бронниковым, который после ее смерти женился на е
+2 CONC  сестре Екатерине Васильевне Виноградовой и она стала Бронниковой.
+1 RIN MH:I50
+1 _UID C14064E5-501F-42EF-8C68-8F1058746B25
+0 @I52@ INDI
+1 _UPD 25 JUN 2011 09:23:02 GMT -0500
+1 NAME Василий Васильевич /Бронников/
+2 GIVN Василий Васильевич
+2 SURN Бронников
+1 SEX M
+1 BIRT
+1 FAMC @F21@
+1 RIN MH:I52
+1 _UID 35B70278-A5F1-41FA-8A3E-40335BC3F193
+0 @I53@ INDI
+1 _UPD 20 MAY 2013 20:33:38 GMT -0500
+1 NAME Вадим Игоревич /Орлов/
+2 GIVN Вадим Игоревич
+2 SURN Орлов
+1 SEX M
+1 BIRT
+2 DATE 19 AUG 1961
+2 PLAC г.Ахтырка (Сумской области, Украинская ССР)
+1 EDUC высшее (медицинское)
+1 RESI
+2 ADDR
+3 CITY г.Улан-Удэ
+3 CTRY Россия
+3 STAE Бурятия
+1 FAMC @F2@
+1 NOTE Заканчивал Читинский медицинский институт
+1 RIN MH:I53
+1 _UID 0F04E3C7-CFFD-4108-B28D-D8CA2DEFC8DD
+0 @I54@ INDI
+1 _UPD 25 JUN 2011 09:36:54 GMT -0500
+1 NAME Дина //
+2 GIVN Дина
+2 _MARNM Гершман
+1 SEX F
+1 BIRT
+1 FAMS @F23@
+1 RIN MH:I54
+1 _UID 25E3C972-E907-4041-87D1-E26287CFB524
+0 @I55@ INDI
+1 _UPD 25 JUN 2011 09:39:20 GMT -0500
+1 NAME Наталья Олеговна /Гершман/
+2 GIVN Наталья Олеговна
+2 SURN Гершман
+1 SEX F
+1 BIRT
+2 DATE 1965г
+1 RESI
+2 ADDR
+3 CITY Дзержинск
+3 CTRY Россия
+3 STAE Нижегородская область
+1 FAMC @F23@
+1 RIN MH:I55
+1 _UID 3F585CA1-2534-4B13-8D64-3075F37F5666
+0 @I56@ INDI
+1 _UPD 25 JUN 2011 09:39:57 GMT -0500
+1 NAME Лидия Олеговна /Гершман/
+2 GIVN Лидия Олеговна
+2 SURN Гершман
+1 SEX F
+1 BIRT
+1 RESI
+2 ADDR
+3 CITY Владимир
+3 CTRY Россия
+3 STAE Владимирская область
+1 FAMC @F23@
+1 RIN MH:I56
+1 _UID 434E7004-00B1-4080-99F9-C717B9FC1869
+0 @I57@ INDI
+1 _UPD 20 MAY 2013 20:33:46 GMT -0500
+1 NAME Галина Олеговна /Гершман/
+2 GIVN Галина Олеговна
+2 SURN Гершман
+1 SEX F
+1 BIRT
+1 RESI
+2 ADDR
+3 CITY г.Улан-Удэ
+3 CTRY Россия
+3 STAE Бурятия
+1 FAMC @F23@
+1 RIN MH:I57
+1 _UID 292A9DF0-D816-46E4-8B95-D0DA052EF3D7
+0 @I58@ INDI
+1 _UPD 25 JUN 2011 09:41:19 GMT -0500
+1 NAME Борис Михайлович /Пономарев/
+2 GIVN Борис Михайлович
+2 SURN Пономарев
+1 SEX M
+1 BIRT
+1 FAMS @F24@
+1 RIN MH:I58
+1 _UID E0F3A859-1572-49F7-A822-20D1A8E1D10D
+0 @I59@ INDI
+1 _UPD 25 JUN 2011 09:42:56 GMT -0500
+1 NAME Надежда Борисовна /Пономарева/
+2 GIVN Надежда Борисовна
+2 SURN Пономарева
+1 SEX F
+1 BIRT
+2 DATE 1963г
+1 DEAT Y
+1 FAMS @F25@
+1 FAMC @F24@
+1 RIN MH:I59
+1 _UID 5ABA07B7-39F0-4E66-ABE0-F5CB3099C6BB
+0 @I60@ INDI
+1 _UPD 25 JUN 2011 09:43:53 GMT -0500
+1 NAME Андрей /Батырев/
+2 GIVN Андрей
+2 SURN Батырев
+1 SEX M
+1 BIRT
+1 FAMS @F25@
+1 NOTE Разошлись (бросил Надежду и ушел)
+1 RIN MH:I60
+1 _UID C0765AE9-2D1C-448B-95BB-464474FA4C91
+0 @I61@ INDI
+1 _UPD 25 JUN 2011 09:44:07 GMT -0500
+1 NAME Анна Андреевна /Батырева/
+2 GIVN Анна Андреевна
+2 SURN Батырева
+1 SEX F
+1 BIRT
+1 FAMC @F25@
+1 RIN MH:I61
+1 _UID 1710081B-20AD-408F-BB90-D8C9F345B281
+0 @I62@ INDI
+1 _UPD 25 JUN 2011 09:44:21 GMT -0500
+1 NAME Антон Андреевич /Батырев/
+2 GIVN Антон Андреевич
+2 SURN Батырев
+1 SEX M
+1 BIRT
+1 FAMC @F25@
+1 RIN MH:I62
+1 _UID D06E331F-7AFB-4D8E-B342-BA296D1695F6
+0 @I63@ INDI
+1 _UPD 25 JUN 2011 09:45:13 GMT -0500
+1 NAME Валентина Борисовна /Пономарева/
+2 GIVN Валентина Борисовна
+2 SURN Пономарева
+1 SEX F
+1 BIRT
+1 FAMS @F26@
+1 FAMC @F24@
+1 RIN MH:I63
+1 _UID 288765BD-59F7-4C77-B9CE-04B546CBEDDF
+0 @I64@ INDI
+1 _UPD 25 JUN 2011 09:45:13 GMT -0500
+1 NAME Тимофей //
+2 GIVN Тимофей
+1 SEX M
+1 BIRT
+1 FAMS @F26@
+1 RIN MH:I64
+1 _UID 20A849A2-8622-4E6F-AE9F-BAC4C3A4F074
+0 @I65@ INDI
+1 _UPD 25 JUN 2011 09:45:30 GMT -0500
+1 NAME Алон //
+2 GIVN Алон
+1 SEX M
+1 BIRT
+1 FAMC @F26@
+1 RIN MH:I65
+1 _UID DCCA9367-5B50-44B1-A47B-E9E82D638F0D
+0 @I66@ INDI
+1 _UPD 25 JUN 2011 09:45:40 GMT -0500
+1 NAME Кира //
+2 GIVN Кира
+1 SEX F
+1 BIRT
+1 FAMC @F26@
+1 RIN MH:I66
+1 _UID D244B205-70DA-4F44-9F37-9396CE1B48C0
+0 @I67@ INDI
+1 _UPD 25 JUN 2011 14:22:32 GMT -0500
+1 NAME Исай Григорьевич /Гершман/
+2 GIVN Исай Григорьевич
+2 SURN Гершман
+1 SEX M
+1 BIRT
+2 DATE 1882г
+2 PLAC село "Богдарин" (Бурятская АССР)
+1 DEAT Y
+2 DATE 1974г
+1 FAMS @F27@
+1 FAMC @F28@
+1 RIN MH:I67
+1 _UID 884556C4-B730-4370-AA99-B3815E1854FE
+0 @I68@ INDI
+1 _UPD 25 JUN 2011 14:23:12 GMT -0500
+1 NAME Софья //
+2 GIVN Софья
+2 _MARNM Гершман
+1 SEX F
+1 BIRT
+1 DEAT Y
+2 DATE 1943г
+2 PLAC г.Баргузин
+1 FAMS @F27@
+1 RIN MH:I68
+1 _UID 198B3802-E86C-48A3-83BE-14EC1F984E12
+0 @I69@ INDI
+1 _UPD 25 JUN 2011 14:24:01 GMT -0500
+1 NAME Григорий /Гершман/
+2 GIVN Григорий
+2 SURN Гершман
+1 SEX M
+1 BIRT
+1 FAMS @F28@
+1 RIN MH:I69
+1 _UID D2195C3D-BA8A-4364-872E-E7ED861D327F
+0 @I70@ INDI
+1 _UPD 25 JUN 2011 14:30:24 GMT -0500
+1 NAME Анна Исаевна /Гершман/
+2 GIVN Анна Исаевна
+2 SURN Гершман
+1 SEX F
+1 BIRT
+1 RESI
+2 ADDR
+3 CITY Беер-шева
+3 CTRY Израиль
+1 FAMC @F27@
+1 RIN MH:I70
+1 _UID 8A41172F-5A8E-450C-BF0D-50C0A4A5197A
+0 @I71@ INDI
+1 _UPD 25 JUN 2011 14:31:50 GMT -0500
+1 NAME Леонид Исаевич /Гершман/
+2 GIVN Леонид Исаевич
+2 SURN Гершман
+1 SEX M
+1 BIRT
+1 FAMC @F27@
+1 RIN MH:I71
+1 _UID 797FC306-FC75-4032-9AF5-B630E0B9C093
+0 @I72@ INDI
+1 _UPD 25 JUN 2011 14:31:30 GMT -0500
+1 NAME Галина Исаевна /Гершман/
+2 GIVN Галина Исаевна
+2 SURN Гершман
+1 SEX F
+1 BIRT
+1 DEAT Y
+1 FAMS @F29@
+1 FAMC @F27@
+1 RIN MH:I72
+1 _UID 81D67B28-182B-4C15-B263-0228C20D3E7B
+0 @I73@ INDI
+1 _UPD 25 JUN 2011 14:32:02 GMT -0500
+1 NAME Мина Исаевна /Гершман/
+2 GIVN Мина Исаевна
+2 SURN Гершман
+1 SEX F
+1 BIRT
+1 FAMC @F27@
+1 RIN MH:I73
+1 _UID 53DE0164-492B-4160-8CEE-273A0A040B63
+0 @I74@ INDI
+1 _UPD 25 JUN 2011 14:32:09 GMT -0500
+1 NAME Рива Исаевна /Гершман/
+2 GIVN Рива Исаевна
+2 SURN Гершман
+1 SEX F
+1 BIRT
+1 FAMC @F27@
+1 RIN MH:I74
+1 _UID 15B0AD98-8A53-4CD7-A11F-D62C90663072
+0 @I75@ INDI
+1 _UPD 25 JUN 2011 14:28:00 GMT -0500
+1 NAME  //
+1 SEX M
+1 BIRT
+1 FAMS @F29@
+1 RIN MH:I75
+1 _UID E8C147DD-A75B-46E2-9092-BCD431B066FB
+0 @I76@ INDI
+1 _UPD 20 MAY 2013 20:33:56 GMT -0500
+1 NAME Татьяна /Гершман/
+2 GIVN Татьяна
+2 SURN Гершман
+1 SEX F
+1 BIRT
+1 RESI
+2 ADDR
+3 CITY г.Улан-Удэ
+3 CTRY Россия
+3 STAE Бурятия
+1 FAMC @F29@
+1 RIN MH:I76
+1 _UID C9193F68-25BC-4186-8D07-EFF37D9A0051
+0 @I77@ INDI
+1 _UPD 25 JUN 2011 14:40:54 GMT -0500
+1 NAME Иван /Неделин/
+2 GIVN Иван
+2 SURN Неделин
+1 SEX M
+1 BIRT
+1 FAMS @F30@
+1 RIN MH:I77
+1 _UID 231F89CE-FA52-4D43-9722-D428A92E95DA
+0 @I78@ INDI
+1 _UPD 25 JUN 2011 14:40:14 GMT -0500
+1 NAME Петр /Гамов/
+2 GIVN Петр
+2 SURN Гамов
+1 SEX M
+1 BIRT
+1 FAMS @F31@
+1 RIN MH:I78
+1 _UID 528DB13A-9973-42A0-9917-971C2BC16A53
+0 @I79@ INDI
+1 _UPD 25 JUN 2011 14:40:54 GMT -0500
+1 NAME Акулина //
+2 GIVN Акулина
+2 _MARNM Неделина
+1 SEX F
+1 BIRT
+1 FAMS @F30@
+1 RIN MH:I79
+1 _UID 622C07CE-AE10-455A-92D7-3D412663A8E5
+0 @I80@ INDI
+1 _UPD 25 JUN 2011 14:45:11 GMT -0500
+1 NAME Николай Анатольевич /Руднев/
+2 GIVN Николай Анатольевич
+2 SURN Руднев
+1 SEX M
+1 BIRT
+1 FAMC @F10@
+1 RIN MH:I80
+1 _UID CAED0333-B664-4230-BCB5-DD0DC5E9084D
+0 @I81@ INDI
+1 _UPD 25 JUN 2011 14:48:05 GMT -0500
+1 NAME Нонна Константиновна //
+2 GIVN Нонна Константиновна
+2 _MARNM Гамова
+1 SEX F
+1 BIRT
+1 FAMS @F32@
+1 RIN MH:I81
+1 _UID 0CF67A47-A590-428D-8DA3-2FC0B698121D
+0 @I82@ INDI
+1 _UPD 25 JUN 2011 14:48:28 GMT -0500
+1 NAME Алла Николаевна /Гамова/
+2 GIVN Алла Николаевна
+2 SURN Гамова
+1 SEX F
+1 BIRT
+1 FAMC @F32@
+1 RIN MH:I82
+1 _UID FD6BFFCC-8C96-4138-ADBF-19FC8DC1B50D
+0 @I83@ INDI
+1 _UPD 25 JUN 2011 14:50:42 GMT -0500
+1 NAME Антонина Ивановна /Гамова/
+2 GIVN Антонина Ивановна
+2 SURN Гамова
+1 SEX F
+1 BIRT
+1 FAMS @F33@
+1 FAMC @F7@
+1 RIN MH:I83
+1 _UID 31B64822-9EF1-4B86-891F-539AD066516C
+0 @I84@ INDI
+1 _UPD 25 JUN 2011 14:50:56 GMT -0500
+1 NAME Лев //
+2 GIVN Лев
+1 SEX M
+1 BIRT
+1 FAMS @F33@
+1 RIN MH:I84
+1 _UID 00D0FFD2-A6BE-4F83-8A43-CC5AA2ED2AA8
+0 @I85@ INDI
+1 _UPD 25 JUN 2011 14:51:27 GMT -0500
+1 NAME Нина Львовна /Гамова/
+2 GIVN Нина Львовна
+2 SURN Гамова
+1 SEX F
+1 BIRT
+1 FAMS @F34@
+1 FAMC @F33@
+1 RIN MH:I85
+1 _UID 816AC3F2-B89A-443C-A0F3-E86B2DC62922
+0 @I86@ INDI
+1 _UPD 25 JUN 2011 14:51:27 GMT -0500
+1 NAME Геннадий //
+2 GIVN Геннадий
+1 SEX M
+1 BIRT
+1 FAMS @F34@
+1 RIN MH:I86
+1 _UID 17C4D36D-9BF8-48D0-8E2E-CC0CFA8F0874
+0 @I87@ INDI
+1 _UPD 25 JUN 2011 14:51:54 GMT -0500
+1 NAME Вячеслав Геннадьевич //
+2 GIVN Вячеслав Геннадьевич
+1 SEX M
+1 BIRT
+1 FAMC @F34@
+1 RIN MH:I87
+1 _UID A6742048-5032-4330-A9FB-2CBD68B30FFE
+0 @I88@ INDI
+1 _UPD 25 JUN 2011 14:55:29 GMT -0500
+1 NAME Егор /Ходорев/
+2 GIVN Егор
+2 SURN Ходорев
+1 SEX M
+1 BIRT
+1 FAMS @F35@
+1 RIN MH:I88
+1 _UID 8509CB7C-5847-40D1-8B52-11825166A508
+0 @I89@ INDI
+1 _UPD 25 JUN 2011 14:56:46 GMT -0500
+1 NAME Надежда Васильевна /Ходорева/
+2 GIVN Надежда Васильевна
+2 SURN Ходорева
+2 _MARNM Воробьева
+1 SEX F
+1 BIRT
+1 FAMS @F36@
+1 FAMC @F8@
+1 RIN MH:I89
+1 _UID D86FA4CD-05F9-4A6C-BA8C-888EC2CD360B
+0 @I90@ INDI
+1 _UPD 25 JUN 2011 14:56:46 GMT -0500
+1 NAME Стефан Иванович /Воробьев/
+2 GIVN Стефан Иванович
+2 SURN Воробьев
+1 SEX M
+1 BIRT
+1 FAMS @F36@
+1 RIN MH:I90
+1 _UID 4455110D-D065-45C7-812E-7117B796DBB4
+0 @I91@ INDI
+1 _UPD 25 JUN 2011 14:57:52 GMT -0500
+1 NAME Валентина Стефановна /Воробьева/
+2 GIVN Валентина Стефановна
+2 SURN Воробьева
+1 SEX F
+1 BIRT
+1 FAMS @F37@
+1 FAMC @F36@
+1 RIN MH:I91
+1 _UID 12459342-974C-4064-AAAA-5C8233B6253E
+0 @I92@ INDI
+1 _UPD 25 JUN 2011 14:57:52 GMT -0500
+1 NAME Александр //
+2 GIVN Александр
+1 SEX M
+1 BIRT
+1 FAMS @F37@
+1 RIN MH:I92
+1 _UID 754AD797-13AD-4D9A-86F1-D24F8737E257
+0 @I93@ INDI
+1 _UPD 25 JUN 2011 15:00:16 GMT -0500
+1 NAME Игорь Александрович //
+2 GIVN Игорь Александрович
+1 SEX M
+1 BIRT
+1 FAMS @F39@
+1 FAMC @F37@
+1 RIN MH:I93
+1 _UID 55B087DB-C361-4EC3-B99B-C4556B931753
+0 @I94@ INDI
+1 _UPD 25 JUN 2011 14:59:08 GMT -0500
+1 NAME Нонна Александровна //
+2 GIVN Нонна Александровна
+1 SEX F
+1 BIRT
+1 FAMS @F38@
+1 FAMC @F37@
+1 RIN MH:I94
+1 _UID DDCB4349-E3AF-462F-8A5A-4F5E70E80F45
+0 @I95@ INDI
+1 _UPD 25 JUN 2011 14:59:08 GMT -0500
+1 NAME  //
+1 SEX M
+1 BIRT
+1 FAMS @F38@
+1 RIN MH:I95
+1 _UID FBD1F74F-4FC3-4288-9CDE-0782AA7B1614
+0 @I96@ INDI
+1 NAME Александра //
+2 GIVN Александра
+1 SEX F
+1 BIRT
+1 FAMC @F38@
+1 RIN MH:I96
+1 _UID 5991806D-F89C-498E-98EC-6E40CF18B708
+0 @I97@ INDI
+1 NAME Мария //
+2 GIVN Мария
+1 SEX F
+1 BIRT
+1 FAMC @F38@
+1 RIN MH:I97
+1 _UID ACC7B9EF-B716-4C20-A900-B80C1B00E4CA
+0 @I98@ INDI
+1 _UPD 25 JUN 2011 15:00:16 GMT -0500
+1 NAME Вера //
+2 GIVN Вера
+1 SEX F
+1 BIRT
+1 FAMS @F39@
+1 RIN MH:I98
+1 _UID 184C94E0-2E94-4F42-8681-E1F9FDD4C013
+0 @I99@ INDI
+1 _UPD 25 JUN 2011 15:00:38 GMT -0500
+1 NAME Геннадий Игоревич //
+2 GIVN Геннадий Игоревич
+1 SEX M
+1 BIRT
+1 FAMC @F39@
+1 RIN MH:I99
+1 _UID E71A427A-C943-45CE-9EDF-7AEAEAA19409
+0 @I100@ INDI
+1 _UPD 25 JUN 2011 15:03:20 GMT -0500
+1 NAME Алексей Стефанович /Воробьев/
+2 GIVN Алексей Стефанович
+2 SURN Воробьев
+1 SEX M
+1 BIRT
+1 DEAT Y
+1 FAMC @F36@
+1 RIN MH:I100
+1 _UID 651FB11A-B809-407A-A5DC-BADD869C9610
+0 @I101@ INDI
+1 _UPD 25 JUN 2011 15:03:53 GMT -0500
+1 NAME Михаил Стефанович /Воробьев/
+2 GIVN Михаил Стефанович
+2 SURN Воробьев
+1 SEX M
+1 BIRT
+1 DEAT Y
+1 FAMS @F40@
+1 FAMC @F36@
+1 RIN MH:I101
+1 _UID D2ED9693-DA00-4CB1-8CAC-673CF8BF7041
+0 @I102@ INDI
+1 _UPD 25 JUN 2011 15:01:57 GMT -0500
+1 NAME Мария //
+2 GIVN Мария
+2 _MARNM Воробьева
+1 SEX F
+1 BIRT
+1 FAMS @F40@
+1 RIN MH:I102
+1 _UID 67F7DF40-04F3-4EF3-AAD7-0166309043B8
+0 @I103@ INDI
+1 _UPD 25 JUN 2011 15:02:11 GMT -0500
+1 NAME Игорь Михайлович /Воробьев/
+2 GIVN Игорь Михайлович
+2 SURN Воробьев
+1 SEX M
+1 BIRT
+1 FAMC @F40@
+1 RIN MH:I103
+1 _UID C252F7F9-9932-4F5E-83DD-276B307CE591
+0 @I104@ INDI
+1 _UPD 25 JUN 2011 15:02:20 GMT -0500
+1 NAME Сергей Михайлович /Воробьев/
+2 GIVN Сергей Михайлович
+2 SURN Воробьев
+1 SEX M
+1 BIRT
+1 FAMC @F40@
+1 RIN MH:I104
+1 _UID B7C68C4F-2EB1-4DCC-94D9-AF9A84F9BACB
+0 @I105@ INDI
+1 _UPD 25 JUN 2011 15:05:29 GMT -0500
+1 NAME Нина Васильевна /Ходорева/
+2 GIVN Нина Васильевна
+2 SURN Ходорева
+1 SEX F
+1 BIRT
+1 FAMS @F41@
+1 FAMC @F8@
+1 RIN MH:I105
+1 _UID 91ACF3BF-9121-4DEC-8FD0-DAA793EADCD9
+0 @I106@ INDI
+1 _UPD 25 JUN 2011 15:05:43 GMT -0500
+1 NAME Георгий //
+2 GIVN Георгий
+1 SEX M
+1 BIRT
+1 DEAT Y
+1 FAMS @F41@
+1 NOTE Погиб на фронте ВОВ
+1 RIN MH:I106
+1 _UID 54219A74-0EBE-4924-AAC0-674707A10AC9
+0 @I107@ INDI
+1 _UPD 25 JUN 2011 15:06:30 GMT -0500
+1 NAME Алла Георгиевна //
+2 GIVN Алла Георгиевна
+2 _MARNM Кочкина
+1 SEX F
+1 BIRT
+1 FAMS @F42@
+1 FAMC @F41@
+1 RIN MH:I107
+1 _UID F9891776-D86A-48CE-A2DB-D864F68B0B1B
+0 @I108@ INDI
+1 _UPD 25 JUN 2011 15:06:30 GMT -0500
+1 NAME Александр /Кочкин/
+2 GIVN Александр
+2 SURN Кочкин
+1 SEX M
+1 BIRT
+1 FAMS @F42@
+1 RIN MH:I108
+1 _UID 70FBDE06-0891-48C1-B9A4-A537F9C62703
+0 @I109@ INDI
+1 _UPD 25 JUN 2011 15:07:21 GMT -0500
+1 NAME Андрей Александрович /Кочкин/
+2 GIVN Андрей Александрович
+2 SURN Кочкин
+1 SEX M
+1 BIRT
+1 FAMS @F43@
+1 FAMC @F42@
+1 RIN MH:I109
+1 _UID 2533548D-5E41-4B21-B1CE-5B86A17CC36D
+0 @I110@ INDI
+1 _UPD 25 JUN 2011 15:08:26 GMT -0500
+1 NAME Вера Александровна /Кочкина/
+2 GIVN Вера Александровна
+2 SURN Кочкина
+1 SEX F
+1 BIRT
+1 FAMS @F44@
+1 FAMC @F42@
+1 RIN MH:I110
+1 _UID 3313FDAB-2E17-4C5F-BC2E-AB1089CA10A3
+0 @I111@ INDI
+1 _UPD 25 JUN 2011 15:07:21 GMT -0500
+1 NAME Елена //
+2 GIVN Елена
+2 _MARNM Кочкина
+1 SEX F
+1 BIRT
+1 FAMS @F43@
+1 RIN MH:I111
+1 _UID FD6653E0-A81B-43A3-AB72-69A894059C90
+0 @I112@ INDI
+1 _UPD 25 JUN 2011 15:07:34 GMT -0500
+1 NAME Кирилл Андреевич /Кочкин/
+2 GIVN Кирилл Андреевич
+2 SURN Кочкин
+1 SEX M
+1 BIRT
+1 FAMC @F43@
+1 RIN MH:I112
+1 _UID F5205929-E210-421D-9B52-446A39C5640A
+0 @I113@ INDI
+1 _UPD 25 JUN 2011 15:07:50 GMT -0500
+1 NAME Матвей Андреевич /Кочкин/
+2 GIVN Матвей Андреевич
+2 SURN Кочкин
+1 SEX M
+1 BIRT
+1 FAMC @F43@
+1 RIN MH:I113
+1 _UID 5558394B-3D57-4026-9679-5BCC91A78E41
+0 @I114@ INDI
+1 _UPD 25 JUN 2011 15:08:26 GMT -0500
+1 NAME  //
+1 SEX M
+1 BIRT
+1 FAMS @F44@
+1 RIN MH:I114
+1 _UID ABF93583-D47C-4F6B-9CC1-513D249C9389
+0 @I115@ INDI
+1 NAME Иван //
+2 GIVN Иван
+1 SEX M
+1 BIRT
+1 FAMC @F44@
+1 RIN MH:I115
+1 _UID 48F156EB-1E5C-4570-B25A-56389B45FA02
+0 @I116@ INDI
+1 _UPD 25 JUN 2011 15:10:43 GMT -0500
+1 NAME Александра Васильевна /Ходорева/
+2 GIVN Александра Васильевна
+2 SURN Ходорева
+2 _MARNM Маруняк
+1 SEX F
+1 BIRT
+1 FAMS @F45@
+1 FAMC @F8@
+1 NOTE Это Тетя "Шура". Мы к ней ходили на поселке частенько.
+1 RIN MH:I116
+1 _UID 3D56B954-9F4E-4EBC-8883-9A361B96E209
+0 @I117@ INDI
+1 _UPD 25 JUN 2011 15:10:10 GMT -0500
+1 NAME Виктор /Маруняк/
+2 GIVN Виктор
+2 SURN Маруняк
+1 SEX M
+1 BIRT
+1 FAMS @F45@
+1 RIN MH:I117
+1 _UID 2F295794-4B56-4029-A03F-0BACE11474DA
+0 @I118@ INDI
+1 _UPD 25 JUN 2011 15:11:33 GMT -0500
+1 NAME Вячеслав Викторович /Маруняк/
+2 GIVN Вячеслав Викторович
+2 SURN Маруняк
+1 SEX M
+1 BIRT
+2 DATE 1955г
+2 PLAC г.Ефремов, Тульская область, Россия
+1 FAMS @F46@
+1 FAMC @F45@
+1 RIN MH:I118
+1 _UID EA37319D-1983-4A0B-8DFF-4BEDDB0CA480
+0 @I119@ INDI
+1 _UPD 25 JUN 2011 15:12:23 GMT -0500
+1 NAME Любовь Михайловна //
+2 GIVN Любовь Михайловна
+2 _MARNM Маруняк
+1 SEX F
+1 BIRT
+1 FAMS @F46@
+1 NOTE Это та самая Любовь Михайловна, которая учила нас (Гамова Ал.И. и Гамова Ан.И) русскому языку в школе №9 в г.Ефре
+2 CONC мов.
+1 RIN MH:I119
+1 _UID FDE3C52D-AE94-4F77-9445-A22F36CC2A60
+0 @I120@ INDI
+1 _UPD 25 JUN 2011 15:13:23 GMT -0500
+1 NAME Константин Васильевич /Ходорев/
+2 GIVN Константин Васильевич
+2 SURN Ходорев
+1 SEX M
+1 BIRT
+1 DEAT Y
+1 FAMS @F47@
+1 FAMC @F8@
+1 RIN MH:I120
+1 _UID 9E1C7924-CF53-4590-A48C-4C18C8C188FD
+0 @I121@ INDI
+1 _UPD 25 JUN 2011 15:13:19 GMT -0500
+1 NAME Акулина //
+2 GIVN Акулина
+2 _MARNM Ходорева
+1 SEX F
+1 BIRT
+1 DEAT Y
+1 FAMS @F47@
+1 RIN MH:I121
+1 _UID 41689F07-0114-454B-B98E-B598A11DE059
+0 @I122@ INDI
+1 _UPD 25 JUN 2011 15:13:44 GMT -0500
+1 NAME Светлана Контантиновна /Ходорева/
+2 GIVN Светлана Контантиновна
+2 SURN Ходорева
+1 SEX F
+1 BIRT
+1 FAMC @F47@
+1 RIN MH:I122
+1 _UID 2B7A3BE8-D4F6-4DE3-8CA5-FD963C0404B2
+0 @I123@ INDI
+1 _UPD 25 JUN 2011 15:14:19 GMT -0500
+1 NAME Тамара Константиновна /Ходорева/
+2 GIVN Тамара Константиновна
+2 SURN Ходорева
+1 SEX F
+1 BIRT
+1 RESI
+2 ADDR
+3 CITY Минск
+3 CTRY Белорусия
+1 FAMC @F47@
+1 RIN MH:I123
+1 _UID F36C9DA3-9B06-4DAB-8888-92C8E249EC82
+0 @I124@ INDI
+1 _UPD 25 JUN 2011 15:15:26 GMT -0500
+1 NAME Николай Васильевич /Ходорев/
+2 GIVN Николай Васильевич
+2 SURN Ходорев
+1 SEX M
+1 BIRT
+1 DEAT Y
+1 FAMS @F48@
+1 FAMC @F8@
+1 RIN MH:I124
+1 _UID D87027D0-AC76-4D64-9F30-64C7338E99DB
+0 @I125@ INDI
+1 _UPD 25 JUN 2011 15:16:21 GMT -0500
+1 NAME Екатерина //
+2 GIVN Екатерина
+2 _MARNM Ходорева
+1 SEX F
+1 BIRT
+1 RESI
+2 ADDR
+3 CITY деревня "Загрядская" (колхоз "Родина")
+3 CTRY Россия
+3 STAE Ефремовский район, Тульская область
+1 FAMS @F48@
+1 RIN MH:I125
+1 _UID 4687F602-BCDC-44F4-B1E2-93EC56150F53
+0 @I126@ INDI
+1 _UPD 25 JUN 2011 15:17:33 GMT -0500
+1 NAME Василий Николаевич /Ходорев/
+2 GIVN Василий Николаевич
+2 SURN Ходорев
+1 SEX M
+1 BIRT
+1 DEAT Y
+1 FAMS @F49@
+1 FAMC @F48@
+1 RIN MH:I126
+1 _UID FEE70CCB-8E43-4154-B736-8D3AB664F01A
+0 @I127@ INDI
+1 _UPD 25 JUN 2011 15:17:33 GMT -0500
+1 NAME Ольга //
+2 GIVN Ольга
+2 _MARNM Ходорева
+1 SEX F
+1 BIRT
+1 FAMS @F49@
+1 RIN MH:I127
+1 _UID 7DAD77D9-FDD3-4593-A918-A8A47FDC08C1
+0 @I128@ INDI
+1 _UPD 25 JUN 2011 15:17:59 GMT -0500
+1 NAME Валерий Васильевич /Ходорев/
+2 GIVN Валерий Васильевич
+2 SURN Ходорев
+1 SEX M
+1 BIRT
+1 FAMC @F49@
+1 RIN MH:I128
+1 _UID 2DEE5655-703F-4076-8013-213FD400FD42
+0 @I129@ INDI
+1 _UPD 25 JUN 2011 15:18:10 GMT -0500
+1 NAME Николай Васильевич /Ходорев/
+2 GIVN Николай Васильевич
+2 SURN Ходорев
+1 SEX M
+1 BIRT
+1 FAMC @F49@
+1 RIN MH:I129
+1 _UID F23E4436-95B3-42DA-B5DC-F60C7BCE52FF
+0 @I130@ INDI
+1 _UPD 25 JUN 2011 15:19:53 GMT -0500
+1 NAME Анатолий Николаевич /Ходорев/
+2 GIVN Анатолий Николаевич
+2 SURN Ходорев
+1 SEX M
+1 BIRT
+1 FAMS @F50@
+1 FAMC @F48@
+1 RIN MH:I130
+1 _UID 43E29F4A-267F-4D65-A86E-68B3E541C93D
+0 @I131@ INDI
+1 _UPD 25 JUN 2011 15:19:53 GMT -0500
+1 NAME Валентина //
+2 GIVN Валентина
+2 _MARNM Ходорева
+1 SEX F
+1 BIRT
+1 FAMS @F50@
+1 RIN MH:I131
+1 _UID B5676917-3427-4B7A-9BF5-FFD8AEAEC65A
+0 @I132@ INDI
+1 _UPD 25 JUN 2011 15:20:26 GMT -0500
+1 NAME Елена Анатольевна /Ходорева/
+2 GIVN Елена Анатольевна
+2 SURN Ходорева
+1 SEX F
+1 BIRT
+1 FAMC @F50@
+1 RIN MH:I132
+1 _UID 12092970-7BCE-4070-9E75-CEC06712A616
+0 @I133@ INDI
+1 _UPD 25 JUN 2011 15:20:36 GMT -0500
+1 NAME Татьяна Анатольевна /Ходорева/
+2 GIVN Татьяна Анатольевна
+2 SURN Ходорева
+1 SEX F
+1 BIRT
+1 FAMC @F50@
+1 RIN MH:I133
+1 _UID 2EBA2220-EA5A-4364-BF41-0C57823857E6
+0 @I134@ INDI
+1 _UPD 8 SEP 2018 04:18:28 GMT -0500
+1 NAME Илья Александрович /Гамов/
+2 GIVN Илья Александрович
+2 SURN Гамов
+1 SEX M
+1 BIRT
+2 DATE 13 JAN 2012
+2 PLAC Москва
+1 FAMC @F1@
+1 RIN MH:I134
+1 _UID B38841B1-6DA5-4DF3-9DF0-96FFFEE9B4E8
+0 @I135@ INDI
+1 _UPD 9 MAY 2018 05:05:10 GMT -0500
+1 NAME Адель Ивановна /Семененко/
+2 GIVN Адель Ивановна
+2 SURN Семененко
+2 _MARNM Канунникова
+1 SEX F
+1 BIRT
+2 DATE 6 MAR 1936
+2 PLAC г.Харьков
+1 DEAT Y
+2 DATE 20 JUN 1997
+2 PLAC с.Даурия Забайкальский р-н Читинская обл.
+2 AGE 61
+1 FAMS @F12@
+1 FAMC @F52@
+1 RIN MH:I135
+1 _UID 56222083B39606DB200231570F329181
+0 @I136@ INDI
+1 _UPD 9 MAY 2018 05:00:46 GMT -0500
+1 NAME Владимир Иванович /Канунников/
+2 GIVN Владимир Иванович
+2 SURN Канунников
+1 SEX M
+1 BIRT
+2 DATE AUG 1893
+2 PLAC Саратовская губерния
+1 DEAT Y
+2 PLAC г. Ташкент
+1 FAMS @F51@
+1 RIN MH:I136
+1 _UID 562220A4541656DB400231570F329181
+0 @I137@ INDI
+1 _UPD 18 OCT 2015 13:16:39 GMT -0500
+1 NAME Татьяна Ивановна //
+2 GIVN Татьяна Ивановна
+2 _MARNM Канунникова
+1 SEX F
+1 BIRT
+1 DEAT Y
+2 DATE 1933
+1 BURI
+2 PLAC Пропала без вести в г.Ташкент
+1 FAMS @F51@
+1 RIN MH:I137
+1 _UID 562220E7A68006DB800231570F329181
+0 @I138@ INDI
+1 _UPD 7 MAY 2018 11:18:22 GMT -0500
+1 NAME Иван Павлович /Семененко/
+2 GIVN Иван Павлович
+2 SURN Семененко
+1 SEX M
+1 BIRT
+2 DATE 1915
+2 PLAC г.Харьков ст.Волошная
+1 DEAT Y
+2 DATE 15 JUL 1942
+2 AGE 26-27
+2 CAUS На войне
+1 BURI
+2 PLAC Погиб над Керченским проливом, не вернулся с боевого задания (был военным летчиком)
+1 FAMS @F52@
+1 FAMS @F500016@
+1 FAMC @F500012@
+1 RIN MH:I138
+1 _UID 56222104877F76DBA00231570F329181
+0 @I139@ INDI
+1 _UPD 18 OCT 2015 13:19:30 GMT -0500
+1 NAME Александра Юлиановна /Громова/
+2 GIVN Александра Юлиановна
+2 SURN Громова
+2 _MARNM Семененко
+1 SEX F
+1 BIRT
+2 DATE 20 APR 1916
+1 DEAT Y
+2 DATE 1984
+2 AGE 67-68
+1 BURI
+2 PLAC Скончалась = октябрь или ноябрь 1984 г.
+1 FAMS @F52@
+1 RIN MH:I139
+1 _UID 56222131BA5726DBF00231570F329181
+0 @I140@ INDI
+1 _UPD 18 OCT 2015 14:58:57 GMT -0500
+1 NAME Евгения Сергеевна /Тыщенко/
+2 GIVN Евгения Сергеевна
+2 SURN Тыщенко
+2 _MARNM Тыщенко
+1 SEX F
+1 BIRT
+2 DATE 31 AUG 1927
+2 PLAC г. Кировоград
+1 DEAT Y
+1 BURI
+2 PLAC г. Талас
+1 FAMS @F53@
+1 RIN MH:I140
+1 _UID 56222240186416DC600231570F329181
+0 @I141@ INDI
+1 _UPD 17 OCT 2015 10:26:51 GMT -0500
+1 NAME Александр Тимофеевич /Солошенко/
+2 GIVN Александр Тимофеевич
+2 SURN Солошенко
+1 SEX M
+1 BIRT
+1 FAMS @F53@
+1 RIN MH:I141
+1 _UID 5622226B248B36DCA00231570F329181
+0 @I142@ INDI
+1 _UPD 17 OCT 2015 10:45:43 GMT -0500
+1 NAME Екатерина /Руссу/
+2 GIVN Екатерина
+2 SURN Руссу
+1 SEX F
+1 BIRT
+1 FAMS @F54@
+1 RIN MH:I142
+1 _UID 562225612E91A6DDD00231570F329181
+0 @I143@ INDI
+1 _UPD 17 OCT 2015 11:31:27 GMT -0500
+1 NAME Ульяна Антоновна /Гамова/
+2 GIVN Ульяна Антоновна
+2 SURN Гамова
+1 SEX F
+1 BIRT
+2 DATE 24 MAR 2015
+2 PLAC Москва
+1 FAMC @F5@
+1 RIN MH:I143
+1 _UID 5622318F6D5F115E700231570F329C28
+0 @I144@ INDI
+1 _UPD 18 OCT 2015 13:13:13 GMT -0500
+1 NAME Ульяна Львовна /Канунникова/
+2 GIVN Ульяна Львовна
+2 SURN Канунникова
+2 _MARNM Воронцова
+1 SEX F
+1 BIRT
+2 DATE 12 NOV 1969
+1 FAMS @F500001@
+1 FAMS @F500009@
+1 FAMC @F12@
+1 RIN MH:I144
+1 _UID 5623943D26A411C6400231570F329137
+0 @I145@ INDI
+1 _UPD 18 OCT 2015 13:12:13 GMT -0500
+1 NAME Елена Львовна /Канунникова/
+2 GIVN Елена Львовна
+2 SURN Канунникова
+2 _MARNM Черкашина
+1 SEX F
+1 BIRT
+2 DATE 4 FEB 1964
+2 PLAC гор.Ташкент Узбекская ССР
+1 RESI
+2 EMAIL lena.ch04@@mail.ru
+1 FAMS @F500002@
+1 FAMS @F500003@
+1 FAMC @F12@
+1 RIN MH:I145
+1 _UID 56239454143F51C6600231570F329137
+0 @I146@ INDI
+1 _UPD 18 OCT 2015 13:15:06 GMT -0500
+1 NAME Владимир Львович /Канунников/
+2 GIVN Владимир Львович
+2 SURN Канунников
+1 SEX M
+1 BIRT
+2 DATE 1959
+1 DEAT Y
+2 DATE 1961
+2 AGE 1-2
+1 FAMC @F12@
+1 RIN MH:I146
+1 _UID 5623946ACCD4F1C6800231570F329137
+0 @I500001@ INDI
+1 NAME Андрей /Лесун/
+2 GIVN Андрей
+2 SURN Лесун
+1 SEX M
+1 FAMS @F500001@
+1 RIN MH:I500001
+1 _UID 56263F1F8AD0063CE00231570F32929D
+0 @I500002@ INDI
+1 _UPD 16 MAY 2018 02:42:48 GMT -0500
+1 NAME Кирилл /Воронцов/
+2 GIVN Кирилл
+2 SURN Воронцов
+1 SEX M
+1 BIRT
+2 DATE 18 NOV 1990
+2 PLAC с.Даурия Забайкальский р-н Читинская обл.
+1 FAMC @F500001@
+1 RIN MH:I500002
+1 _UID 56263F1F140F063D700231570F32929D
+0 @I500004@ INDI
+1 NAME Игорь Сергеевич /Проскуряков/
+2 GIVN Игорь Сергеевич
+2 SURN Проскуряков
+1 SEX M
+1 BIRT
+2 DATE 1 MAR 1960
+2 PLAC с.Орел Усольский р-н Пермская обл.
+1 FAMS @F500002@
+1 FAMC @F500013@
+1 RIN MH:I500004
+1 _UID 56263F207BEC063EC00231570F32929D
+0 @I500005@ INDI
+1 NAME Евгений Алексеевич /Черкашин/
+2 GIVN Евгений Алексеевич
+2 SURN Черкашин
+1 SEX M
+1 BIRT
+2 DATE 11 SEP 1962
+2 PLAC з/с.Поспелихинский Алтайского края
+1 FAMS @F500003@
+1 FAMC @F500006@
+1 RIN MH:I500005
+1 _UID 56263F207CE0D63F100231570F32929D
+0 @I500006@ INDI
+1 NAME Анна Игоревна /Проскурякова/
+2 GIVN Анна Игоревна
+2 SURN Проскурякова
+2 _MARNM Бородина
+1 SEX F
+1 BIRT
+2 DATE 21 JUN 1984
+2 PLAC гор.Ташкент Узбекская ССР
+1 FAMS @F500004@
+1 FAMC @F500002@
+1 RIN MH:I500006
+1 _UID 56263F207E10863FA00231570F32929D
+0 @I500007@ INDI
+1 NAME Евгений Александрович /Бородин/
+2 GIVN Евгений Александрович
+2 SURN Бородин
+1 SEX M
+1 BIRT
+2 DATE 21 NOV 1976
+2 PLAC г.Омск
+1 FAMS @F500004@
+1 FAMC @F500005@
+1 RIN MH:I500007
+1 _UID 56263F22EC110640100231570F32929D
+0 @I500008@ INDI
+1 _UPD 8 SEP 2018 04:42:13 GMT -0500
+1 NAME Александра /Русинова/
+2 GIVN Александра
+2 SURN Русинова
+2 _MARNM Бородина
+1 SEX F
+1 BIRT
+2 DATE 26 DEC 1954
+1 FAMS @F500005@
+1 RIN MH:I500008
+1 _UID 56263F22ED44A640A00231570F32929D
+0 @I500009@ INDI
+1 NAME Александр /Бородин/
+2 GIVN Александр
+2 SURN Бородин
+1 SEX M
+1 BIRT
+2 DATE 7 NOV 1953
+1 FAMS @F500005@
+1 RIN MH:I500009
+1 _UID 56263F22EE137641200231570F32929D
+0 @I500010@ INDI
+1 NAME Влад /Бородин/
+2 GIVN Влад
+2 SURN Бородин
+1 SEX M
+1 BIRT
+2 DATE 1979
+1 FAMC @F500005@
+1 RIN MH:I500010
+1 _UID 56263F22EEDE4641900231570F32929D
+0 @I500011@ INDI
+1 NAME Екатерина Евгеньевна /Черкашина/
+2 GIVN Екатерина Евгеньевна
+2 SURN Черкашина
+1 SEX F
+1 BIRT
+2 DATE 19 FEB 1994
+2 PLAC с.Даурия Забайкальский р-н Читинская обл.
+1 FAMC @F500003@
+1 RIN MH:I500011
+1 _UID 56263F23A6EAE642000231570F32929D
+0 @I500012@ INDI
+1 NAME Валентина Ивановна /Меркушева/
+2 GIVN Валентина Ивановна
+2 SURN Меркушева
+2 _MARNM Черкашина
+1 SEX F
+1 BIRT
+2 DATE 14 DEC 1941
+2 PLAC д.В.Сенда Мари-Турекский р-н Марийская АССР
+1 DEAT Y
+2 DATE 3 NOV 2013
+2 PLAC г.Новокузнецк Кемеровская обл.
+2 AGE 71
+1 BURI
+2 PLAC г.Новокузнецк Кемеровская обл.
+1 FAMS @F500006@
+1 FAMC @F500010@
+1 RIN MH:I500012
+1 _UID 56263F23A8036642700231570F32929D
+0 @I500013@ INDI
+1 NAME Алексей Иванович /Черкашин/
+2 GIVN Алексей Иванович
+2 SURN Черкашин
+1 SEX M
+1 BIRT
+2 DATE 22 DEC 1938
+2 PLAC с.Углы Поспелихинского р-на Алтайского края
+1 DEAT Y
+2 DATE 17 JUN 2006
+2 PLAC г.Новокузнецк Кемеровская обл.
+2 AGE 67
+1 BURI
+2 PLAC г.Новокузнецк Кемеровская обл.
+1 FAMS @F500006@
+1 FAMC @F500007@
+1 RIN MH:I500013
+1 _UID 56263F23A8891642B00231570F32929D
+0 @I500014@ INDI
+1 _UPD 16 MAY 2018 02:43:27 GMT -0500
+1 NAME Иван Федорович /Черкашин/
+2 GIVN Иван Федорович
+2 SURN Черкашин
+1 SEX M
+1 BIRT
+2 DATE 12 SEP 1911
+1 DEAT Y
+2 DATE 8 MAY 1983
+2 PLAC з/с.Поспелихинский Алтайского края
+2 AGE 71
+1 FAMS @F500007@
+1 RIN MH:I500014
+1 _UID 56263F23A9DC1643800231570F32929D
+0 @I500015@ INDI
+1 NAME Анна Прокопьевна //
+2 GIVN Анна Прокопьевна
+2 _MARNM Черкашина
+1 SEX F
+1 BIRT
+2 DATE 12 MAY 1918
+1 DEAT Y
+2 DATE 12 NOV 1988
+2 PLAC г.Новокузнецк Кемеровская обл.
+2 AGE 70
+1 BURI
+2 PLAC г.Новокузнецк Кемеровская обл.
+1 FAMS @F500007@
+1 RIN MH:I500015
+1 _UID 56263F2522896643F00231570F32929D
+0 @I500018@ INDI
+1 NAME Александр /Воронцов/
+2 GIVN Александр
+2 SURN Воронцов
+1 SEX M
+1 BIRT
+2 DATE 30 MAR 1970
+1 FAMS @F500009@
+1 RIN MH:I500018
+1 _UID 56263F2524F03644C00231570F32929D
+0 @I500019@ INDI
+1 NAME Полина Александровна /Воронцова/
+2 GIVN Полина Александровна
+2 SURN Воронцова
+1 SEX F
+1 BIRT
+2 DATE 3 OCT 1993
+2 PLAC с.Даурия Забайкальский р-н Читинская обл.
+1 FAMC @F500009@
+1 RIN MH:I500019
+1 _UID 56263F2525E69645000231570F32929D
+0 @I500021@ INDI
+1 NAME Анастасия Николаевна //
+2 GIVN Анастасия Николаевна
+2 _MARNM Меркушева
+1 SEX F
+1 BIRT
+2 DATE 13 APR 1908
+1 DEAT Y
+2 DATE 16 JAN 1990
+2 PLAC г.Новокузнецк Кемеровская обл.
+2 AGE 81
+1 BURI
+2 PLAC г.Новокузнецк Кемеровская обл.
+1 FAMS @F500010@
+1 RIN MH:I500021
+1 _UID 56263F2689AFF645D00231570F32929D
+0 @I500022@ INDI
+1 NAME Иван Иванович /Меркушев/
+2 GIVN Иван Иванович
+2 SURN Меркушев
+1 SEX M
+1 BIRT
+2 DATE 8 SEP 1908
+1 DEAT Y
+2 DATE OCT 1941
+2 PLAC Пропал без вести
+2 AGE 33
+2 CAUS На войне
+1 BURI
+2 PLAC Неизвестно
+1 FAMS @F500010@
+1 FAMC @F500011@
+1 RIN MH:I500022
+1 _UID 56263F268B90B646600231570F32929D
+0 @I500023@ INDI
+1 NAME Наталья Егоровна //
+2 GIVN Наталья Егоровна
+2 _MARNM Меркушева
+1 SEX F
+1 BIRT
+2 PLAC д.В.Сенда Мари-Турекский р-н Марийская АССР
+1 DEAT Y
+1 FAMS @F500011@
+1 RIN MH:I500023
+1 _UID 56263F268C469646900231570F32929D
+0 @I500024@ INDI
+1 NAME Павел /Семененко/
+2 GIVN Павел
+2 SURN Семененко
+1 SEX M
+1 BIRT
+2 PLAC г.Харьков ст.Волошная
+1 FAMS @F500012@
+1 RIN MH:I500024
+1 _UID 56263F28EA35C647100231570F32929D
+0 @I500025@ INDI
+1 NAME Валентина Степановна //
+2 GIVN Валентина Степановна
+2 _MARNM Проскурякова
+1 SEX F
+1 BIRT
+2 DATE 7 JAN 1937
+1 FAMS @F500013@
+1 RIN MH:I500025
+1 _UID 56263F28EA937647400231570F32929D
+0 @I500026@ INDI
+1 NAME Сергей Петрович /Проскуряков/
+2 GIVN Сергей Петрович
+2 SURN Проскуряков
+1 SEX M
+1 BIRT
+2 DATE 18 JUN 1935
+1 FAMS @F500013@
+1 FAMC @F500014@
+1 RIN MH:I500026
+1 _UID 56263F28EB0EF647700231570F32929D
+0 @I500027@ INDI
+1 NAME Анна //
+2 GIVN Анна
+2 _MARNM Проскурякова
+1 SEX F
+1 FAMS @F500014@
+1 RIN MH:I500027
+1 _UID 56263F28EB7E3647900231570F32929D
+0 @I500028@ INDI
+1 NAME Олег Сергеевич /Проскуряков/
+2 GIVN Олег Сергеевич
+2 SURN Проскуряков
+1 SEX M
+1 BIRT
+2 DATE 12 SEP 1962
+1 FAMS @F500015@
+1 FAMC @F500013@
+1 RIN MH:I500028
+1 _UID 56263F28EBCF8647B00231570F32929D
+0 @I500029@ INDI
+1 NAME Елена /Проскурякова/
+2 GIVN Елена
+2 SURN Проскурякова
+1 SEX F
+1 BIRT
+2 DATE 1984
+1 FAMC @F500015@
+1 RIN MH:I500029
+1 _UID 56263F28EC52D647D00231570F32929D
+0 @I500030@ INDI
+1 NAME Татьяна /Проскурякова/
+2 GIVN Татьяна
+2 SURN Проскурякова
+1 SEX F
+1 FAMS @F500015@
+1 RIN MH:I500030
+1 _UID 56263F28EC636647E00231570F32929D
+0 @I500031@ INDI
+1 NAME Юрий Сергеевич /Проскуряков/
+2 GIVN Юрий Сергеевич
+2 SURN Проскуряков
+1 SEX M
+1 BIRT
+2 DATE 31 MAR 1968
+1 FAMC @F500013@
+1 RIN MH:I500031
+1 _UID 56263F28ECDC2648100231570F32929D
+0 @I500032@ INDI
+1 _UPD 7 MAY 2018 11:18:25 GMT -0500
+1 NAME Феодосия Ивановна //
+2 GIVN Феодосия Ивановна
+2 _MARNM Семененко
+1 SEX F
+1 DEAT Y
+2 DATE 1933
+1 FAMS @F500012@
+1 SOUR @S500001@
+2 PAGE Феодосия Ивановна Семененко
+2 QUAY 3
+2 DATA
+3 DATE 7 MAY 2018
+3 TEXT Добавлено посредством Person Discovery
+2 EVEN Discovery
+1 RIN MH:I500032
+1 _UID 5AF07C4E8304810A5601BDBEE7039AC2
+0 @I500033@ INDI
+1 _UPD 7 MAY 2018 11:18:25 GMT -0500
+1 NAME  //
+2 _MARNM Семененко
+1 SEX F
+1 BIRT
+2 DATE 20 APR 1916
+1 DEAT Y
+2 DATE 1984
+2 AGE 67-68
+1 BURI
+2 PLAC Скончалась = октябрь или ноябрь 1984 г.
+1 FAMS @F500016@
+1 SOUR @S500001@
+2 PAGE Неизвестно
+2 QUAY 3
+2 DATA
+3 DATE 7 MAY 2018
+3 TEXT Добавлено посредством Person Discovery
+2 EVEN Discovery
+1 RIN MH:I500033
+1 _UID 5AF07C4F00E2810D5601BDBEE7039AC2
+0 @I500034@ INDI
+1 _UPD 7 MAY 2018 11:18:26 GMT -0500
+1 NAME Прокофий Павлович /Семененко/
+2 GIVN Прокофий Павлович
+2 SURN Семененко
+1 SEX M
+1 BIRT
+2 DATE 1908
+2 PLAC Украина, Полтавская область, Великобагачанский район, село Подол
+1 DEAT Y
+2 DATE 1956
+2 PLAC Россия, город Грозный
+2 AGE 47-48
+1 FAMS @F500017@
+1 FAMC @F500012@
+1 SOUR @S500001@
+2 PAGE Прокофий Павлович Семененко
+2 QUAY 3
+2 DATA
+3 DATE 7 MAY 2018
+3 TEXT Добавлено посредством Person Discovery
+2 EVEN Discovery
+1 RIN MH:I500034
+1 _UID 5AF07C4F5CF9B1115601BDBEE7039AC2
+0 @I500035@ INDI
+1 _UPD 7 MAY 2018 11:18:26 GMT -0500
+1 NAME Григорий Павлович /Семененко/
+2 GIVN Григорий Павлович
+2 SURN Семененко
+2 NSFX летчик
+1 SEX M
+1 BIRT
+2 DATE 1919
+2 PLAC Украина, Полтавская область, Великобагачанский район, село Подол
+1 DEAT Y
+2 DATE 1986
+2 PLAC Россия, Санкт-Петербург
+2 AGE 66-67
+1 BURI
+2 PLAC Южное Кладбище
+1 FAMC @F500012@
+1 SOUR @S500001@
+2 PAGE Григорий Павлович Семененко, летчик
+2 QUAY 3
+2 DATA
+3 DATE 7 MAY 2018
+3 TEXT Добавлено посредством Person Discovery
+2 EVEN Discovery
+1 RIN MH:I500035
+1 _UID 5AF07C4F8838A1135601BDBEE7039AC2
+0 @I500036@ INDI
+1 _UPD 7 MAY 2018 11:18:27 GMT -0500
+1 NAME Илья павлович /Семененко/
+2 GIVN Илья павлович
+2 SURN Семененко
+2 NSFX узник концлагеря
+1 SEX M
+1 BIRT
+2 PLAC Украина, Полтавская область, Великобагачанский район, село Подол
+1 DEAT Y
+2 PLAC Узбекистан, Ташкент
+2 CAUS Естественная смерть/старость
+1 BURI
+2 PLAC Ташкент
+1 FAMC @F500012@
+1 SOUR @S500001@
+2 PAGE Илья павлович Семененко, узник концлагеря
+2 QUAY 3
+2 DATA
+3 DATE 7 MAY 2018
+3 TEXT Добавлено посредством Person Discovery
+2 EVEN Discovery
+1 RIN MH:I500036
+1 _UID 5AF07C4FB210F1155601BDBEE7039AC2
+0 @I500037@ INDI
+1 _UPD 7 MAY 2018 11:18:27 GMT -0500
+1 NAME Василий Павлович /Семененко/
+2 GIVN Василий Павлович
+2 SURN Семененко
+2 NSFX моряк
+1 SEX M
+1 BIRT
+2 DATE 1926
+2 PLAC Украина, Полтавская область, Великобагачанский район, село Подол
+1 DEAT Y
+1 FAMC @F500012@
+1 SOUR @S500001@
+2 PAGE Василий Павлович Семененко, моряк
+2 QUAY 3
+2 DATA
+3 DATE 7 MAY 2018
+3 TEXT Добавлено посредством Person Discovery
+2 EVEN Discovery
+1 RIN MH:I500037
+1 _UID 5AF07C4FD7D2D1175601BDBEE7039AC2
+0 @I500038@ INDI
+1 _UPD 7 MAY 2018 11:18:27 GMT -0500
+1 NAME Валентина Федоровна /Комарова/
+2 GIVN Валентина Федоровна
+2 SURN Комарова
+2 _MARNM Семененко
+1 SEX F
+1 BIRT
+2 DATE 1911
+1 DEAT Y
+2 DATE JAN 1971
+2 PLAC Украина, Луганска область, г. Луганск
+2 AGE 59-60
+1 BURI
+2 PLAC кладбище п. Дзержинского
+1 FAMS @F500017@
+1 FAMS @F500019@
+1 FAMC @F500018@
+1 SOUR @S500001@
+2 PAGE Валентина Федоровна Семененко (Комарова)
+2 QUAY 3
+2 DATA
+3 DATE 7 MAY 2018
+3 TEXT Добавлено посредством Person Discovery
+2 EVEN Discovery
+1 RIN MH:I500038
+1 _UID 5AF07C501AAE91195601BDBEE7039AC2
+0 @I500039@ INDI
+1 _UPD 7 MAY 2018 11:18:27 GMT -0500
+1 NAME Алексей Алексеевич /Румянцев/
+2 GIVN Алексей Алексеевич
+2 SURN Румянцев
+1 SEX M
+1 BIRT
+2 DATE 1939
+2 PLAC Россия, Санкт-Петербург
+1 DEAT Y
+2 PLAC Украина, Луганска область, г. Луганск
+1 FAMC @F500017@
+1 SOUR @S500001@
+2 PAGE Алексей Алексеевич Румянцев
+2 QUAY 3
+2 DATA
+3 DATE 7 MAY 2018
+3 TEXT Добавлено посредством Person Discovery
+2 EVEN Discovery
+1 RIN MH:I500039
+1 _UID 5AF07C5059DDB11D5601BDBEE7039AC2
+0 @I500040@ INDI
+1 _UPD 7 MAY 2018 11:18:28 GMT -0500
+1 NAME Федор Петрович /Комаров/
+2 GIVN Федор Петрович
+2 SURN Комаров
+2 NSFX портной
+1 SEX M
+1 DEAT Y
+2 DATE 1941
+2 PLAC Россия, Санкт-Петербург
+1 FAMS @F500018@
+1 SOUR @S500001@
+2 PAGE Федор Петрович Комаров, портной
+2 QUAY 3
+2 DATA
+3 DATE 7 MAY 2018
+3 TEXT Добавлено посредством Person Discovery
+2 EVEN Discovery
+1 RIN MH:I500040
+1 _UID 5AF07C5086D8411F5601BDBEE7039AC2
+0 @I500041@ INDI
+1 _UPD 7 MAY 2018 11:18:28 GMT -0500
+1 NAME Александра Яковлевна //
+2 GIVN Александра Яковлевна
+2 _MARNM Комарова
+1 SEX F
+1 DEAT Y
+2 DATE 1941
+2 PLAC Россия, Санкт-Петербург
+1 FAMS @F500018@
+1 SOUR @S500001@
+2 PAGE Александра Яковлевна Комарова
+2 QUAY 3
+2 DATA
+3 DATE 7 MAY 2018
+3 TEXT Добавлено посредством Person Discovery
+2 EVEN Discovery
+1 RIN MH:I500041
+1 _UID 5AF07C50AD15A1225601BDBEE7039AC2
+0 @I500042@ INDI
+1 _UPD 7 MAY 2018 11:18:28 GMT -0500
+1 NAME Алексей /Румянцев/
+2 GIVN Алексей
+2 SURN Румянцев
+1 SEX M
+1 DEAT Y
+2 DATE 1942
+2 PLAC Россия, Санкт-Петербург
+2 CAUS На войне
+1 BURI
+2 PLAC Россия, Санкт-Петербург
+1 FAMS @F500019@
+1 SOUR @S500001@
+2 PAGE Алексей Румянцев
+2 QUAY 3
+2 DATA
+3 DATE 7 MAY 2018
+3 TEXT Добавлено посредством Person Discovery
+2 EVEN Discovery
+1 RIN MH:I500042
+1 _UID 5AF07C50CFFAB1245601BDBEE7039AC2
+0 @I500043@ INDI
+1 _UPD 7 MAY 2018 11:18:28 GMT -0500
+1 NAME Павел Федорович /Комаров/
+2 GIVN Павел Федорович
+2 SURN Комаров
+1 SEX M
+1 DEAT Y
+1 FAMC @F500018@
+1 SOUR @S500001@
+2 PAGE Павел Федорович Комаров
+2 QUAY 3
+2 DATA
+3 DATE 7 MAY 2018
+3 TEXT Добавлено посредством Person Discovery
+2 EVEN Discovery
+1 RIN MH:I500043
+1 _UID 5AF07C5115B061295601BDBEE7039AC2
+0 @I500052@ INDI
+1 _UPD 8 SEP 2018 04:32:02 GMT -0500
+1 NAME Анастасия /Гущина/
+2 GIVN Анастасия
+2 SURN Гущина
+2 _MARNM Гурьева
+1 SEX F
+1 FAMS @F500026@
+1 RIN MH:I500052
+1 _UID 5B7688F0DA358400A86108AD9F1F4F18
+0 @I500053@ INDI
+1 _UPD 5 NOV 2018 21:39:57 GMT -0500
+1 NAME София Сергеевна /Гурьева/
+2 GIVN София Сергеевна
+2 SURN Гурьева
+1 SEX F
+1 BIRT
+2 DATE 13 FEB 2014
+1 FAMC @F500027@
+1 RIN MH:I500053
+1 _UID 5B9394DE9C50D21C61BBD1FAA7BF680C
+0 @I500054@ INDI
+1 _UPD 8 SEP 2018 04:22:38 GMT -0500
+1 NAME  //
+1 SEX M
+1 FAMS @F500027@
+1 RIN MH:I500054
+1 _UID 5B9394DEAF44F21D61BBD1FAA7BF680C
+0 @F1@ FAM
+1 _UPD 13 JUN 2012 14:36:06 GMT -0500
+1 HUSB @I1@
+1 WIFE @I2@
+1 CHIL @I3@
+1 CHIL @I4@
+1 CHIL @I134@
+1 RIN MH:F1
+1 _UID 519C682F-A7EC-40FF-8792-245B8CA10163
+1 MARR
+2 DATE 14 JUN 2002
+2 PLAC 1-й дворец бракосочетанций (Грибоедовский), г.Москва
+2 NOTE Witnesses:Буров Максим Владимирович, Прохорова Александра Владимировна
+0 @F2@ FAM
+1 _UPD 25 JUN 2011 09:34:19 GMT -0500
+1 HUSB @I5@
+1 WIFE @I6@
+1 CHIL @I53@
+1 CHIL @I8@
+1 CHIL @I1@
+1 CHIL @I7@
+1 RIN MH:F2
+1 _UID 51DE09AF-12FE-4C06-90B3-007FC18F34A7
+1 MARR
+2 DATE MAY 1972
+2 PLAC Тюмень
+0 @F3@ FAM
+1 _UPD 8 DEC 2010 20:10:01 GMT -0500
+1 HUSB @I9@
+1 WIFE @I10@
+1 CHIL @I6@
+1 CHIL @I11@
+1 CHIL @I12@
+1 RIN MH:F3
+1 _UID 20661084-54A9-470B-AA2B-285D9DF489C2
+1 MARR
+0 @F4@ FAM
+1 _UPD 8 DEC 2010 20:11:19 GMT -0500
+1 HUSB @I13@
+1 WIFE @I12@
+1 CHIL @I14@
+1 CHIL @I15@
+1 RIN MH:F4
+1 _UID 5A5B6506-AA2F-49D7-8093-28A1B7D63630
+1 MARR
+2 DATE 07.05.1976
+2 PLAC Тюмень
+0 @F5@ FAM
+1 _UPD 17 OCT 2015 11:31:27 GMT -0500
+1 HUSB @I7@
+1 WIFE @I16@
+1 CHIL @I17@
+1 CHIL @I18@
+1 CHIL @I143@
+1 RIN MH:F5
+1 _UID 7478B922-C15B-4C8B-B36D-DA5264D6AD45
+1 MARR
+2 DATE 9 AUG 1997
+2 PLAC коломна
+0 @F6@ FAM
+1 _UPD 8 DEC 2010 20:14:42 GMT -0500
+1 HUSB @I19@
+1 WIFE @I20@
+1 CHIL @I5@
+1 CHIL @I21@
+1 CHIL @I22@
+1 RIN MH:F6
+1 _UID A298216B-558D-4651-8A41-BA996F111837
+1 MARR
+0 @F7@ FAM
+1 _UPD 25 JUN 2011 14:50:11 GMT -0500
+1 HUSB @I23@
+1 WIFE @I24@
+1 CHIL @I9@
+1 CHIL @I27@
+1 CHIL @I41@
+1 CHIL @I42@
+1 CHIL @I83@
+1 RIN MH:F7
+1 _UID 2AC34CB2-F5A0-4478-A409-01A25360288E
+1 MARR
+0 @F8@ FAM
+1 _UPD 25 JUN 2011 15:15:09 GMT -0500
+1 HUSB @I25@
+1 WIFE @I26@
+1 CHIL @I10@
+1 CHIL @I89@
+1 CHIL @I105@
+1 CHIL @I116@
+1 CHIL @I120@
+1 CHIL @I124@
+1 RIN MH:F8
+1 _UID 62D23889-ACF5-4D1F-9610-9DE0654B926A
+1 MARR
+0 @F9@ FAM
+1 _UPD 20 JUN 2011 17:14:55 GMT -0500
+1 HUSB @I28@
+1 WIFE @I27@
+1 CHIL @I30@
+1 CHIL @I29@
+1 RIN MH:F9
+1 _UID 13872FC8-2715-4624-9B65-71644979CD42
+1 MARR
+0 @F10@ FAM
+1 _UPD 25 JUN 2011 14:45:11 GMT -0500
+1 HUSB @I29@
+1 WIFE @I31@
+1 CHIL @I32@
+1 CHIL @I80@
+1 RIN MH:F10
+1 _UID E028FCE0-FD6A-4544-BF59-945944B66CD9
+1 MARR
+0 @F11@ FAM
+1 _UPD 20 JUN 2011 17:26:37 GMT -0500
+1 HUSB @I33@
+1 WIFE @I34@
+1 CHIL @I2@
+1 CHIL @I36@
+1 RIN MH:F11
+1 _UID 0248AEA5-5EC8-4B12-865B-7C1EF2A51343
+1 MARR
+0 @F12@ FAM
+1 _UPD 18 OCT 2015 12:45:30 GMT -0500
+1 HUSB @I35@
+1 WIFE @I135@
+1 CHIL @I146@
+1 CHIL @I34@
+1 CHIL @I145@
+1 CHIL @I144@
+1 RIN MH:F12
+1 _UID 2A22BEF4-585C-4882-8313-BB683A97D28E
+1 MARR
+0 @F13@ FAM
+1 _UPD 20 JUN 2011 20:56:03 GMT -0500
+1 HUSB @I37@
+1 WIFE @I38@
+1 CHIL @I16@
+1 RIN MH:F13
+1 _UID FDA198C5-67EF-4A79-AAE0-3C1FB5A50A98
+1 MARR
+0 @F14@ FAM
+1 _UPD 20 JUN 2011 20:57:39 GMT -0500
+1 HUSB @I39@
+1 CHIL @I38@
+1 RIN MH:F14
+1 _UID 6115A616-77C8-4EED-8EFB-3EEE738C03D5
+1 MARR
+0 @F15@ FAM
+1 _UPD 20 JUN 2011 21:05:27 GMT -0500
+1 HUSB @I40@
+1 CHIL @I13@
+1 RIN MH:F15
+1 _UID 05855E66-C2DE-4A87-B0FC-227B0D221803
+1 MARR
+0 @F16@ FAM
+1 _UPD 25 JUN 2011 09:13:12 GMT -0500
+1 HUSB @I43@
+1 WIFE @I45@
+1 CHIL @I20@
+1 RIN MH:F16
+1 _UID 935ABC72-52E6-4EE7-8598-D4F1C37EB7F8
+1 MARR
+0 @F17@ FAM
+1 _UPD 25 JUN 2011 09:08:54 GMT -0500
+1 HUSB @I44@
+1 CHIL @I43@
+1 RIN MH:F17
+1 _UID BEFB2C0A-854E-49A9-927C-7F490E867C39
+1 MARR
+0 @F18@ FAM
+1 _UPD 25 JUN 2011 09:14:02 GMT -0500
+1 HUSB @I46@
+1 CHIL @I45@
+1 CHIL @I47@
+1 CHIL @I50@
+1 RIN MH:F18
+1 _UID 30EFB365-5ED5-4518-A164-8EC0BE9A7241
+1 MARR
+0 @F19@ FAM
+1 _UPD 25 JUN 2011 09:12:05 GMT -0500
+1 HUSB @I48@
+1 CHIL @I46@
+1 RIN MH:F19
+1 _UID F3D5F6F6-78F8-4EED-A7ED-A9D1E0E348B7
+1 MARR
+0 @F21@ FAM
+1 _UPD 25 JUN 2011 09:23:02 GMT -0500
+1 HUSB @I43@
+1 WIFE @I50@
+1 CHIL @I52@
+1 RIN MH:F21
+1 _UID 33BC67A6-4CB2-49D2-949C-0339890BD279
+1 MARR
+0 @F23@ FAM
+1 _UPD 25 JUN 2011 09:40:14 GMT -0500
+1 HUSB @I21@
+1 WIFE @I54@
+1 CHIL @I55@
+1 CHIL @I57@
+1 CHIL @I56@
+1 RIN MH:F23
+1 _UID 131AF33E-C6E0-47F8-9045-4B75C2F28B4B
+1 MARR
+0 @F24@ FAM
+1 _UPD 25 JUN 2011 09:44:51 GMT -0500
+1 HUSB @I58@
+1 WIFE @I22@
+1 CHIL @I59@
+1 CHIL @I63@
+1 RIN MH:F24
+1 _UID 47033DCB-213F-4316-BBC8-6CE32B37D032
+1 MARR
+0 @F25@ FAM
+1 _UPD 25 JUN 2011 09:44:21 GMT -0500
+1 HUSB @I60@
+1 WIFE @I59@
+1 CHIL @I61@
+1 CHIL @I62@
+1 RIN MH:F25
+1 _UID 9E09E488-20E4-4F4C-90E5-C7A64B93AC1C
+1 MARR
+0 @F26@ FAM
+1 _UPD 25 JUN 2011 09:45:40 GMT -0500
+1 HUSB @I64@
+1 WIFE @I63@
+1 CHIL @I65@
+1 CHIL @I66@
+1 RIN MH:F26
+1 _UID F4A170B0-681C-45A5-926B-C7C81DA40DDD
+1 MARR
+0 @F27@ FAM
+1 _UPD 25 JUN 2011 14:25:46 GMT -0500
+1 HUSB @I67@
+1 WIFE @I68@
+1 CHIL @I73@
+1 CHIL @I74@
+1 CHIL @I19@
+1 CHIL @I70@
+1 CHIL @I71@
+1 CHIL @I72@
+1 RIN MH:F27
+1 _UID 2E100B4B-2F31-4DAF-A01D-F726D9443AEC
+1 MARR
+0 @F28@ FAM
+1 _UPD 25 JUN 2011 14:24:01 GMT -0500
+1 HUSB @I69@
+1 CHIL @I67@
+1 RIN MH:F28
+1 _UID FDF13660-BC9E-455F-82C5-71BB1C791B75
+1 MARR
+0 @F29@ FAM
+1 _UPD 25 JUN 2011 14:28:00 GMT -0500
+1 HUSB @I75@
+1 WIFE @I72@
+1 CHIL @I76@
+1 RIN MH:F29
+1 _UID A0BFE984-A212-4409-BEAA-AFD4637BAD81
+1 MARR
+0 @F30@ FAM
+1 _UPD 25 JUN 2011 14:40:54 GMT -0500
+1 HUSB @I77@
+1 WIFE @I79@
+1 CHIL @I24@
+1 RIN MH:F30
+1 _UID C5A492C7-D746-4C94-A0C6-885D3CF1BB1B
+1 MARR
+0 @F31@ FAM
+1 _UPD 25 JUN 2011 14:40:14 GMT -0500
+1 HUSB @I78@
+1 CHIL @I23@
+1 RIN MH:F31
+1 _UID F529D6D5-CE99-4526-8194-F489545C4C0F
+1 MARR
+0 @F32@ FAM
+1 _UPD 25 JUN 2011 14:48:28 GMT -0500
+1 HUSB @I41@
+1 WIFE @I81@
+1 CHIL @I82@
+1 RIN MH:F32
+1 _UID A76260A6-E98F-44A3-815D-26D9FE68F1B3
+1 MARR
+0 @F33@ FAM
+1 _UPD 25 JUN 2011 14:50:42 GMT -0500
+1 HUSB @I84@
+1 WIFE @I83@
+1 CHIL @I85@
+1 RIN MH:F33
+1 _UID E6B5C870-832A-4EF1-9DF9-5A675F466989
+1 MARR
+0 @F34@ FAM
+1 _UPD 25 JUN 2011 14:51:54 GMT -0500
+1 HUSB @I86@
+1 WIFE @I85@
+1 CHIL @I87@
+1 RIN MH:F34
+1 _UID 08271804-9835-4067-86CE-724111D2E6F9
+1 MARR
+0 @F35@ FAM
+1 _UPD 25 JUN 2011 14:55:29 GMT -0500
+1 HUSB @I88@
+1 CHIL @I25@
+1 RIN MH:F35
+1 _UID D4885A4D-DE24-49A2-BFBE-7B2718983AD5
+1 MARR
+0 @F36@ FAM
+1 _UPD 25 JUN 2011 15:01:41 GMT -0500
+1 HUSB @I90@
+1 WIFE @I89@
+1 CHIL @I91@
+1 CHIL @I100@
+1 CHIL @I101@
+1 RIN MH:F36
+1 _UID A4225C43-A47A-42A0-8AD1-2F83CEF3C1A7
+1 MARR
+0 @F37@ FAM
+1 _UPD 25 JUN 2011 14:58:16 GMT -0500
+1 HUSB @I92@
+1 WIFE @I91@
+1 CHIL @I93@
+1 CHIL @I94@
+1 RIN MH:F37
+1 _UID 58360325-5AB2-49A9-BDDB-3C3A477755E0
+1 MARR
+0 @F38@ FAM
+1 _UPD 25 JUN 2011 14:59:08 GMT -0500
+1 HUSB @I95@
+1 WIFE @I94@
+1 CHIL @I96@
+1 CHIL @I97@
+1 RIN MH:F38
+1 _UID 4EF8201E-9D60-4A01-A101-E235F422F6B9
+1 MARR
+0 @F39@ FAM
+1 _UPD 25 JUN 2011 15:00:38 GMT -0500
+1 HUSB @I93@
+1 WIFE @I98@
+1 CHIL @I99@
+1 RIN MH:F39
+1 _UID 81A5519A-18F3-49F7-9B8A-C4ABDB365722
+1 MARR
+0 @F40@ FAM
+1 _UPD 25 JUN 2011 15:02:20 GMT -0500
+1 HUSB @I101@
+1 WIFE @I102@
+1 CHIL @I103@
+1 CHIL @I104@
+1 RIN MH:F40
+1 _UID 0C89906A-2B6D-48D7-BC2C-1BFE3B62AA95
+1 MARR
+0 @F41@ FAM
+1 _UPD 25 JUN 2011 15:06:05 GMT -0500
+1 HUSB @I106@
+1 WIFE @I105@
+1 CHIL @I107@
+1 RIN MH:F41
+1 _UID 2C94692D-C95B-418C-8DBF-4EB712EE8590
+1 MARR
+0 @F42@ FAM
+1 _UPD 25 JUN 2011 15:07:04 GMT -0500
+1 HUSB @I108@
+1 WIFE @I107@
+1 CHIL @I109@
+1 CHIL @I110@
+1 RIN MH:F42
+1 _UID 821CF9CE-A0C7-4B11-BBB2-87C9A8DCD2F7
+1 MARR
+0 @F43@ FAM
+1 _UPD 25 JUN 2011 15:07:50 GMT -0500
+1 HUSB @I109@
+1 WIFE @I111@
+1 CHIL @I112@
+1 CHIL @I113@
+1 RIN MH:F43
+1 _UID 496C9600-9E48-473A-B4A6-463DDFB42FA0
+1 MARR
+0 @F44@ FAM
+1 _UPD 25 JUN 2011 15:08:26 GMT -0500
+1 HUSB @I114@
+1 WIFE @I110@
+1 CHIL @I115@
+1 RIN MH:F44
+1 _UID EA8D9B8B-3C27-4351-BD56-D5C36A3C765B
+1 MARR
+0 @F45@ FAM
+1 _UPD 25 JUN 2011 15:11:15 GMT -0500
+1 HUSB @I117@
+1 WIFE @I116@
+1 CHIL @I118@
+1 RIN MH:F45
+1 _UID E6760B65-A68A-44F4-B2A3-00894C3B08AA
+1 MARR
+0 @F46@ FAM
+1 _UPD 25 JUN 2011 15:11:33 GMT -0500
+1 HUSB @I118@
+1 WIFE @I119@
+1 RIN MH:F46
+1 _UID 26343101-FA9A-4B50-878D-39A0734A95AF
+1 MARR
+0 @F47@ FAM
+1 _UPD 25 JUN 2011 15:14:01 GMT -0500
+1 HUSB @I120@
+1 WIFE @I121@
+1 CHIL @I122@
+1 CHIL @I123@
+1 RIN MH:F47
+1 _UID 43D84879-0BCF-4ADC-861C-C14D159122A2
+1 MARR
+0 @F48@ FAM
+1 _UPD 25 JUN 2011 15:19:41 GMT -0500
+1 HUSB @I124@
+1 WIFE @I125@
+1 CHIL @I126@
+1 CHIL @I130@
+1 RIN MH:F48
+1 _UID 6A0A71D4-F90C-4925-84D6-2ECA1A2961EB
+1 MARR
+0 @F49@ FAM
+1 _UPD 25 JUN 2011 15:18:10 GMT -0500
+1 HUSB @I126@
+1 WIFE @I127@
+1 CHIL @I129@
+1 CHIL @I128@
+1 RIN MH:F49
+1 _UID 711F3F5F-779D-42DD-A6CF-7F9677D7DDF1
+1 MARR
+0 @F50@ FAM
+1 _UPD 25 JUN 2011 15:20:36 GMT -0500
+1 HUSB @I130@
+1 WIFE @I131@
+1 CHIL @I132@
+1 CHIL @I133@
+1 RIN MH:F50
+1 _UID 146999AB-F1FD-40BD-821A-80A23E5415D5
+1 MARR
+0 @F51@ FAM
+1 _UPD 17 OCT 2015 10:20:23 GMT -0500
+1 HUSB @I136@
+1 WIFE @I137@
+1 CHIL @I35@
+1 RIN MH:F51
+1 _UID 562220A4546D36DB500231570F329181
+1 MARR
+0 @F52@ FAM
+1 _UPD 17 OCT 2015 10:21:37 GMT -0500
+1 HUSB @I138@
+1 WIFE @I139@
+1 CHIL @I135@
+1 RIN MH:F52
+1 _UID 56222104880FC6DBB00231570F329181
+1 MARR
+0 @F53@ FAM
+1 _UPD 17 OCT 2015 10:26:51 GMT -0500
+1 HUSB @I141@
+1 WIFE @I140@
+1 CHIL @I33@
+1 RIN MH:F53
+1 _UID 5622224018BD16DC700231570F329181
+1 MARR
+0 @F54@ FAM
+1 _UPD 17 OCT 2015 10:39:29 GMT -0500
+1 HUSB @I36@
+1 WIFE @I142@
+1 RIN MH:F54
+1 _UID 562225612F85C6DDE00231570F329181
+1 MARR
+0 @F500001@ FAM
+1 HUSB @I500001@
+1 WIFE @I144@
+1 CHIL @I500002@
+1 RIN MH:F500001
+1 _UID 56263F1F9A00063CF00231570F32929D
+1 MARR
+2 PLAC гор.Ташкент Узбекская ССР
+1 MARR
+1 DIV Y
+0 @F500002@ FAM
+1 HUSB @I500004@
+1 WIFE @I145@
+1 CHIL @I500006@
+1 RIN MH:F500002
+1 _UID 56263F207BFB763ED00231570F32929D
+1 MARR
+2 DATE 4 JAN 1983
+2 PLAC гор.Ташкент Узбекская ССР
+1 DIV Y
+2 DATE 24 NOV 1986
+0 @F500003@ FAM
+1 HUSB @I500005@
+1 WIFE @I145@
+1 CHIL @I500011@
+1 RIN MH:F500003
+1 _UID 56263F207CFA263F200231570F32929D
+1 MARR
+2 DATE 11 FEB 1994
+2 PLAC с.Даурия Забайкальский р-н Читинская обл.
+0 @F500004@ FAM
+1 HUSB @I500007@
+1 WIFE @I500006@
+1 RIN MH:F500004
+1 _UID 56263F22EC2D8640200231570F32929D
+1 MARR
+2 DATE 5 JUL 2003
+2 PLAC г.Омск
+0 @F500005@ FAM
+1 HUSB @I500009@
+1 WIFE @I500008@
+1 CHIL @I500007@
+1 CHIL @I500010@
+1 RIN MH:F500005
+1 _UID 56263F22ED5A4640B00231570F32929D
+0 @F500006@ FAM
+1 HUSB @I500013@
+1 WIFE @I500012@
+1 CHIL @I500005@
+1 RIN MH:F500006
+1 _UID 56263F23A812A642800231570F32929D
+0 @F500007@ FAM
+1 HUSB @I500014@
+1 WIFE @I500015@
+1 CHIL @I500013@
+1 RIN MH:F500007
+1 _UID 56263F23A9EB1643900231570F32929D
+0 @F500009@ FAM
+1 HUSB @I500018@
+1 WIFE @I144@
+1 CHIL @I500019@
+1 RIN MH:F500009
+1 _UID 56263F2524FF8644D00231570F32929D
+1 MARR
+0 @F500010@ FAM
+1 HUSB @I500022@
+1 WIFE @I500021@
+1 CHIL @I500012@
+1 RIN MH:F500010
+1 _UID 56263F2689BFD645E00231570F32929D
+0 @F500011@ FAM
+1 WIFE @I500023@
+1 CHIL @I500022@
+1 RIN MH:F500011
+1 _UID 56263F268C5F0646A00231570F32929D
+0 @F500012@ FAM
+1 _UPD 7 MAY 2018 11:18:22 GMT -0500
+1 HUSB @I500024@
+1 WIFE @I500032@
+1 CHIL @I500034@
+1 CHIL @I138@
+1 CHIL @I500035@
+1 CHIL @I500037@
+1 CHIL @I500036@
+1 RIN MH:F500012
+1 _UID 56263F28EA457647200231570F32929D
+0 @F500013@ FAM
+1 HUSB @I500026@
+1 WIFE @I500025@
+1 CHIL @I500004@
+1 CHIL @I500028@
+1 CHIL @I500031@
+1 RIN MH:F500013
+1 _UID 56263F28EAA8B647500231570F32929D
+0 @F500014@ FAM
+1 WIFE @I500027@
+1 CHIL @I500026@
+1 RIN MH:F500014
+1 _UID 56263F28EB94B647A00231570F32929D
+0 @F500015@ FAM
+1 HUSB @I500028@
+1 WIFE @I500030@
+1 CHIL @I500029@
+1 RIN MH:F500015
+1 _UID 56263F28EC736647F00231570F32929D
+0 @F500016@ FAM
+1 _UPD 7 MAY 2018 11:18:23 GMT -0500
+1 HUSB @I138@
+1 WIFE @I500033@
+1 RIN MH:F500016
+1 _UID 5AF07C4F1033110E5601BDBEE7039AC2
+1 MARR
+0 @F500017@ FAM
+1 _UPD 7 MAY 2018 11:18:24 GMT -0500
+1 HUSB @I500034@
+1 WIFE @I500038@
+1 CHIL @I500039@
+1 RIN MH:F500017
+1 _UID 5AF07C501B4AD11A5601BDBEE7039AC2
+1 MARR
+0 @F500018@ FAM
+1 _UPD 7 MAY 2018 11:18:24 GMT -0500
+1 HUSB @I500040@
+1 WIFE @I500041@
+1 CHIL @I500038@
+1 CHIL @I500043@
+1 RIN MH:F500018
+1 _UID 5AF07C508765A1205601BDBEE7039AC2
+0 @F500019@ FAM
+1 _UPD 7 MAY 2018 11:18:24 GMT -0500
+1 HUSB @I500042@
+1 WIFE @I500038@
+1 RIN MH:F500019
+1 _UID 5AF07C50D1A4F1255601BDBEE7039AC2
+1 EVEN
+2 TYPE Death of Spouse
+1 MARR
+0 @F500026@ FAM
+1 _UPD 17 AUG 2018 03:36:01 GMT -0500
+1 HUSB @I15@
+1 WIFE @I500052@
+1 RIN MH:F500026
+1 _UID 5B7688F169984401A86108AD9F1F4F18
+1 MARR
+2 DATE 17 JUN 2016
+2 PLAC г.Коломна, Московская область, Россия
+0 @F500027@ FAM
+1 _UPD 6 OCT 2019 10:10:41 GMT -0500
+1 HUSB @I500054@
+1 WIFE @I14@
+1 CHIL @I500053@
+1 RIN MH:F500027
+1 _UID 5B9394DEBAC6D21E61BBD1FAA7BF680C
+1 EVEN
+2 TYPE MYHERITAGE:REL_UNKNOWN
+0 @S500001@ SOUR
+1 _UPD 7 MAY 2018 11:18:22 GMT -0500
+1 AUTH Dmitry Kovalenko
+1 TITL Kovalenko Web Site
+1 TEXT <p>Семейное дерево на MyHeritage</p><p>Семейный сайт: Kovalenko Web Site</p>Семейное дерево: 502338551-1
+1 _TYPE Discovery
+1 _MEDI 502338551-1
+0 TRLR

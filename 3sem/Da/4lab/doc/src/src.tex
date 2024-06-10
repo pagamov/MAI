@@ -1,0 +1,514 @@
+\section{Описание}
+
+Для решения задачи построим бор для входной строчки, примем за букву отдельные слова, знаки вопроса (Джокеры) считаются целыми словами. Используем препроцессинг считав всю строчку целиком, разобьем её на куски, в которых содержатся только буквы, или только Джокеры, отправим данный массив строк в конструктор для бора. В свою очередь трай, он же бор, получая новое слово состоящее из букв, будет начиная от корня добавлять это слово, проходя по уже существующим вершинам, или добавляя новые, после добавления всех слов вызывается функция добавления суффиксных связей, что позволит нам в дальнейшем дойдя до конкретной точки, сразу переместиться в нужную для нас вершину, которая является суффиксом но на единичку короче нашей ветки, таким образом, не найдя путь дальше, мы сможем продожить поиск, не возвращаясь по тексту обратно на длину глубины в боре. Что делает данный алгоритм онлайн алгоритмом, при условии, что мы заранее узнали целый паттерн по которому мы будем искать в тексте слова, ведь при анализе текста мы уже не сможем достроить наш бор.
+
+Что касается препроцесинга текста, я реализовал его как массив состоящий из обьектов класса Letter, в которых содержатся такие параметры, как адрес в тексте (строка, колонка), а также кол-во совпадений (overlap), позже мы поговорим как работает алгоритм точнее и для чего нужна эта переменная.
+
+Таким образом вся композиция представляется нам четырьмя файлами:
+
+trie.hpp - Класс бора, он же Трай, который принимает массив массивов слов, строя по нему Бор.
+
+text.hpp - Класс для препроцесинга текста, нужен для оптимизации и упрощения дальнешйего использования текста для алгоритма.
+
+Файл korasic.hpp - Наследует все предыдущие классы, строя внутри себя объект класса text и trie. Используя метод Overlap находит все включения исходного паттерна в текст, выводит включения сразу как только находит.
+
+main.cpp - содержит автомат для сборки текста для отправки в трай, а также препроцессинг и сборка и отправка в класс текста, дальше использование функции Overlap И финальное завершение программы.
+
+
+\pagebreak
+
+\section{Исходный код}
+
+Далее представлен код программы в соответствии с разбиением по файлам для удобства навигации.
+
+\begin{lstlisting}[language=C++]
+// main.cpp
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <vector>
+#include <unordered_map>
+
+#include "korasic.hpp"
+
+using namespace std;
+
+enum States {
+    WORD,
+    JOKER,
+    START
+};
+
+string line;
+string letter;
+vector <string> pattern;
+vector <vector <string> > patterns;
+
+Korasic korasic;
+
+int main(int argc, char ** argv) {
+    States state = START;
+
+    getline(cin, line);
+    std::istringstream iline(line);
+
+    while (iline >> letter) {
+        if (letter == "?") {
+            switch (state) {
+                case WORD:
+                    patterns.push_back(pattern);
+                    pattern.clear();
+                    state = JOKER;
+                    break;
+                case START:
+                    state = JOKER;
+                    break;
+                case JOKER:
+                    break;
+            }
+            pattern.push_back(letter);
+        } else {
+            switch (state) {
+                case JOKER:
+                    patterns.push_back(pattern);
+                    pattern.clear();
+                    state = WORD;
+                    break;
+                case START:
+                    state = WORD;
+                    break;
+                case WORD:
+                    break;
+            }
+            pattern.push_back(letter);
+        }
+    }
+    switch (state) {
+        case WORD:
+        case JOKER:
+            patterns.push_back(pattern);
+            break;
+        case START:
+            break;
+    }
+
+    korasic.Fill_Trie(patterns);
+
+    pattern.clear();
+    patterns.clear();
+
+    while(getline(cin, line)) {
+        std::istringstream iline(line);
+        while (iline >> letter) {
+            pattern.push_back(letter);
+        }
+        patterns.push_back(pattern);
+        pattern.clear();
+    }
+
+    korasic.Fill_Text(patterns);
+
+    korasic.Overlap();
+    return 0;
+}
+
+\end{lstlisting}
+
+\pagebreak
+
+\begin{lstlisting}[language=C++]
+// korasic.hpp
+#ifndef AHO_HPP
+#define AHO_HPP
+
+#include <iostream>
+#include <unordered_map>
+#include <string>
+#include <vector>
+
+#include "text.hpp"
+#include "trie.hpp"
+
+using namespace std;
+
+class Korasic : Text, Trie {
+public:
+    Korasic () {}
+
+    void Fill_Trie(vector <vector <string> > &patterns) {
+        this->trie.Add_Word(patterns);
+        this->trie.Link_Trie();
+    }
+
+    void Fill_Text(vector <vector <string> > &patterns) {
+        for (vector <string> line : patterns) {
+            for (string letter : line) {
+                this->text.Add_Letter(letter);
+            }
+            this->text.Add_Line();
+        }
+    }
+
+    void Overlap() {
+        if (this->text.Size() != 0) {
+            int current_position = 0;
+
+            Node * current_node = this->trie.root;
+            Node * ptr = nullptr;
+
+            for (Letter * current_letter : this->text.letters) {
+                while (true) {
+                    if (current_node->ways.find(current_letter->letter) != current_node->ways.end()) {
+                        current_node = current_node->ways[current_letter->letter];
+                        break;
+                    } else {
+                        if (current_node->suff_link != nullptr) {
+                            current_node = current_node->suff_link;
+                        } else {
+                            break;
+                        }
+                    }
+                }
+                if (this->trie.global_shift != -1) {
+                    if (current_position - this->trie.global_shift >= 0) {
+                        this->text.letters[current_position - this->trie.global_shift]->overlap += 1;
+                        if (this->text.letters[current_position - this->trie.global_shift]->overlap == this->trie.word_counter + 1) {
+                            cout << this->text.letters[current_position - this->trie.global_shift]->line << ", ";
+                            cout << this->text.letters[current_position - this->trie.global_shift]->column << "\n";
+                        }
+                    }
+                }
+
+                if (current_node->leaf == true) {
+                    for (int i : current_node->shift_back) {
+                        if (current_position - i >= 0) {
+                            this->text.letters[current_position - i]->overlap += 1;
+                            if (this->text.letters[current_position - i]->overlap == this->trie.word_counter + 1) {
+                                cout << this->text.letters[current_position - i]->line << ", ";
+                                cout << this->text.letters[current_position - i]->column << "\n";
+                            }
+                        }
+                    }
+                }
+                if (current_node->exit_link != nullptr) {
+                    ptr = current_node->exit_link;
+                    while (ptr != nullptr) {
+                        if (ptr->leaf == true) {
+                            for (int i : ptr->shift_back) {
+                                if (current_position - i >= 0) {
+                                    this->text.letters[current_position - i]->overlap += 1;
+                                    if (this->text.letters[current_position - i]->overlap == this->trie.word_counter + 1) {
+                                        cout << this->text.letters[current_position - i]->line << ", ";
+                                        cout << this->text.letters[current_position - i]->column << "\n";
+                                    }
+                                }
+                            }
+                        }
+                        ptr = ptr->exit_link;
+                    }
+                }
+                ++current_position;
+            }
+        }
+    }
+
+    ~Korasic () {}
+
+private:
+    Text text;
+    Trie trie;
+};
+
+#endif
+
+\end{lstlisting}
+
+\pagebreak
+
+\begin{lstlisting}[language=C++]
+// trie.hpp
+#ifndef TRIE_HPP
+#define TRIE_HPP
+
+#include <iostream>
+#include <unordered_map>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+class Trie {
+public:
+    Trie () : global_shift(-1) {
+        root = new Node();
+    }
+
+    void Add_Word(vector <vector <string> > &patterns) {
+        for (vector <string> word : patterns) {
+            if (word[0] != "?") {
+                root->Add_Word(word, this->global_shift);
+                this->word_counter += 1;
+            }
+            this->global_shift += word.size();
+        }
+    }
+
+    void Link_Trie() {
+        for (pair <string, Node *> word : root->ways) {
+            word.second->Link_S();
+        }
+        for (pair <string, Node *> word : root->ways) {
+            word.second->Link_E();
+        }
+    }
+
+    ~Trie () {
+        delete root;
+    }
+
+    struct Node {
+        unordered_map <string, Node *> ways;
+        bool leaf;
+        Node * parent;
+        Node * suff_link;
+        Node * exit_link;
+        string pch;
+        vector <int> shift_back;
+
+        Node() : leaf(false), parent(nullptr), suff_link(nullptr), exit_link(nullptr) {}
+
+        void Add_Word(vector <string> &word, int global_shift, int position = 0) {
+            if (int(word.size()) == position) {
+                leaf = true;
+                this->shift_back.push_back(word.size() + global_shift);
+                return;
+            }
+            for (int i = 0; i < int(word[position].size()); i++) {
+                if (word[position][i] >= 'A' && word[position][i] <= 'Z') {
+                    word[position][i] = 'a' + (word[position][i] - 'A');
+                }
+            }
+            if (ways.find(word[position]) == ways.end()) {
+                ways[word[position]] = new Node();
+                ways[word[position]]->parent = this;
+                ways[word[position]]->pch = word[position];
+            }
+            ways[word[position]]->Add_Word(word, global_shift, position + 1);
+        }
+
+        void Link_Suff() {
+            if (this->suff_link == nullptr) {
+                Node * Parent = this->parent;
+                if (Parent->suff_link == nullptr && Parent->parent != nullptr) {
+                    Parent->Link_Suff();
+                } else if (Parent->parent == nullptr) {
+                    this->suff_link = Parent;
+                    return;
+                }
+                Node * suff = Parent->suff_link;
+                while (true) {
+                    if (suff->ways.find(this->pch) != suff->ways.end()) {
+                        this->suff_link = suff->ways[this->pch];
+                        return;
+                    }
+                    if (suff->suff_link == nullptr && suff->parent != nullptr) {
+                        suff->Link_Suff();
+                    } else if (suff->parent == nullptr) {
+                        this->suff_link = suff;
+                        return;
+                    }
+                    suff = suff->suff_link;
+                }
+            }
+        }
+
+        void Link_S() {
+            for (pair <string, Node *> word : ways) {
+                word.second->Link_S();
+            }
+            this->Link_Suff();
+        }
+
+        void Link_Exit() {
+            Node * suff = this->suff_link;
+            while (true) {
+                if (suff->leaf == true) {
+                    this->exit_link = suff;
+                    return;
+                } else if (suff->parent == nullptr) {
+                    return;
+                }
+                suff = suff->suff_link;
+            }
+        }
+
+        void Link_E() {
+            for (pair <string, Node *> word : ways) {
+                word.second->Link_E();
+            }
+            this->Link_Exit();
+        }
+
+        ~Node() {
+            for (pair <string, Node *> word : ways) {
+                delete word.second;
+            }
+        }
+    };
+
+    Node * root;
+    int global_shift;
+    int word_counter;
+};
+
+#endif
+
+\end{lstlisting}
+
+\pagebreak
+
+\begin{lstlisting}[language=C++]
+// text.hpp
+#ifndef TEXT_HPP
+#define TEXT_HPP
+
+#include <iostream>
+#include <unordered_map>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+class Text {
+public:
+    struct Letter {
+        int line, column, overlap;
+        string letter;
+
+        Letter (string &letter, int line, int column) {
+            this->letter = letter;
+            this->line = line;
+            this->column = column;
+            this->overlap = 0;
+        }
+
+        ~Letter () {}
+    };
+
+    Text() : current_line(1), current_column(1) {}
+
+    void Add_Letter(string &letter) {
+        for (int i = 0; i < int(letter.size()); i++) {
+            if (letter[i] >= 'A' && letter[i] <= 'Z') {
+                letter[i] = 'a' + (letter[i] - 'A');
+            }
+        }
+        letters.push_back(new Letter(letter, this->current_line, this->current_column));
+        this->Add_Column();
+    }
+
+    void Add_Line() {
+        this->current_line += 1;
+        this->current_column = 1;
+    }
+
+    void Add_Column() {
+        this->current_column += 1;
+    }
+
+    int Size() {
+        return this->letters.size();
+    }
+
+    ~Text() {
+        for (Letter * letter : letters) {
+            delete letter;
+        }
+    }
+
+    int current_line;
+    int current_column;
+    vector <Letter *> letters;
+};
+
+#endif
+
+\end{lstlisting}
+
+\pagebreak
+
+Также представлен makefile для компиляции всего проекта.
+
+\lstset{language=[gnu] make}
+\lstset{
+   language=[gnu] make,
+   keywordstyle=\color{teal}\textbf,
+   stringstyle=\color{blue},
+   identifierstyle=\itshape
+}
+
+\begin{lstlisting}
+CC = g++
+CCFLAGS = -std=c++11 -Wall -pedantic
+###____###
+main : code/main.cpp code/*.hpp ; $(CC) $(CCFLAGS) -o main code/main.cpp
+clean : ; rm main
+tar : ; 
+        mkdir solution ; cp code/*.hpp code/*.cpp code/makefile solution ; tar -cf solution.tar solution
+tard : solution/ solution.tar ; rm -r solution solution.tar
+test : ; python Tester.py
+cleant : ; rm *.txt
+check : ; python Checker.py
+valgrind : ; 
+        valgrind -s --leak-check=full --track-origins=yes ./main < test.txt > res.txt
+callgrind : ; valgrind --tool=callgrind ./main < test.txt > res.txt
+cache : ; kcachegrind
+###___###
+\end{lstlisting}
+
+\pagebreak
+
+\section{Консоль}
+\begin{alltt}
+pagamov@pagamov-VirtualBox:~/Desktop/3sem/Da/4lab/src make
+g++ -std=c++11 -Wall -pedantic -o main code/main.cpp
+pagamov@pagamov-VirtualBox:~/Desktop/3sem/Da/4lab/src make test
+python Tester.py
+how many pattern? 2
+how many text? 10
+pagamov@pagamov-VirtualBox:~/Desktop/3sem/Da/4lab/src make check
+python Checker.py
+pagamov@pagamov-VirtualBox:~/Desktop/3sem/Da/4lab/src cat test.txt 
+? ? 
+r y i x n 
+j i i l 
+s 
+pagamov@pagamov-VirtualBox:~/Desktop/3sem/Da/4lab/src cat check_cpp.txt 
+1, 1
+1, 2
+1, 3
+1, 4
+1, 5
+2, 1
+2, 2
+2, 3
+2, 4
+
+pagamov@pagamov-VirtualBox:~/Desktop/3sem/Da/4lab/src make valgrind
+valgrind --leak-check=full --track-origins=yes ./main < test.txt > res.txt
+==26770== Memcheck, a memory error detector
+==26770== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==26770== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==26770== Command: ./main
+==26770== 
+==26770== HEAP SUMMARY:
+==26770==     in use at exit: 0 bytes in 0 blocks
+==26770==   total heap usage: 35 allocs, 35 frees, 83,328 bytes allocated
+==26770== 
+==26770== All heap blocks were freed -- no leaks are possible
+==26770== 
+==26770== For counts of detected and suppressed errors, rerun with: -v
+==26770== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+\end{alltt}
+
+\pagebreak

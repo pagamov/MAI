@@ -1,0 +1,14 @@
+*.out
+*.o
+.DS_Store
+main
+program
+*.txt
+*.tar
+src/makefile_v2
+/complite/
+res
+solution
+callgrind.*
+1
+2

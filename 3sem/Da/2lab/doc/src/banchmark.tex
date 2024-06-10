@@ -1,0 +1,38 @@
+\section{Тест производительности}
+
+Для уже написанной программы допишем второй файл на языке с++, где заменим наше дерево встроенным в с++ map. Также слегка модифицируем оба файла так чтобы на вход первым параметром он принимал кол-во поступаемых элементов и потом используя \#include <time.h> напишем простой таймер от начала работы до ее завершения. Программа написанная на питоне генерирует нужное вол-во тестов и прогоняет их в программах, которые выводят по завершению работы время и кол-во элементов. 
+
+\begin{alltt}
+MacBook-Pro-Pavel:src pavelgamov make test
+python tester.py
+
+How many loop?	5
+Start size?	10000
+
+gcc    -c -o code/main.o code/main.c
+gcc    -c -o code/m.o code/m.c
+gcc    -c -o code/delete.o code/delete.c
+gcc    -c -o code/insert.o code/insert.c
+gcc    -c -o code/clear.o code/clear.c
+gcc    -c -o code/saveload.o code/saveload.c
+gcc    -c -o code/merge.o code/merge.c
+gcc -Wall -pedantic -std=c99 -g code/*.o -o main
+
+MacBook-Pro-Pavel:src pavelgamov cat res.txt 
+size:  10000		time:  0.009841
+size:  20000		time:  0.019643
+size:  40000		time:  0.044685
+size:  80000		time:  0.086463
+size:  160000		time:  0.168590
+
+MacBook-Pro-Pavel:src pavelgamov cat res2.txt
+size:  10000		time:  0.262778
+size:  20000		time:  0.553230
+size:  40000		time:  1.037304
+size:  80000		time:  2.074010
+size:  160000		time:  4.231900
+\end{alltt}
+
+То ли я напортачил при создании прогарммы с использованием $map$, либо моя программа работает быстрее и эффективнее.
+
+\pagebreak

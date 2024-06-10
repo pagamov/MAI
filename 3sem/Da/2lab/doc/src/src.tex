@@ -1,0 +1,868 @@
+\section{Описание}
+
+Идея реализации - создание главного файла main.c, где мы будем считывать строки (команды) и числа и отправлять их через анализатор в структуру, допустим мы читаем +, следовательно дальше мы читаем строку в буфер и число, которые будут добавлены в дерево. Отдельно поговорим про саму структуру дерева, я разбил ее на темаические файлы, в которых реализован функционал структуры. 
+
+Файл clear.c содержит в себе функции удаления памяти в структуре, очистки нодов и рекурсивные очистки и удаления поддеревьев. 
+
+delete.c содежит в себе функции удаления элементов из дерева, включая в себя как легкие - удаление из листа, так и удаление из не листьев, требующих перестройки и перекомпановки дерева, посредством слияний и перебросок из левых или правых деревьев.
+
+insert.c содержит функционал по добавлению элементов в структуру, добавление в лист, сильное добавление требуется для добавления в нод элемента с фиксированными хвостами и ссылками на потомков (требуется в некоторых случаях при переброске элементов при слиянии нодов), функция разделения дерева на элемент и два его потомка (требуется после вставки для устранения переполнения при добавлении элемента, таким образом если добавив элемент окажется, что нод переполнен, вызывается функция деления нода).
+
+m.c - общий файл который нужен для описания более общих функций которые нужны для преобразования входных данных, функции сравнения строк между собой, функции бинарного поиска, который требуется для более быстрого нахождения строк в нодах, при больших T это играет большую роль, так как операция сравнения занимает слишком много времени. Также главная функция обьявления и выделения памяти под структуру, а также функция проверки принадлежности элемента к дереву.
+
+merge.c - содержит в себе лишь одну функцию по слиянию двух нодов в один, содержит под собой 6 случаев, включая нулевые.
+
+saveload.c - функционал для осуществления бинарной серриализации и бинарной десерриализации структуры из/в файл. Для сохранения дерева в файл и дальнейшей 
+
+
+
+\pagebreak
+
+\section{Исходный код}
+
+Далее представлен код программы в соответствии с разбиением по файлам для удобства навигации.
+
+\begin{lstlisting}[language=C]
+//bTree.h
+#ifndef BTREE_H
+#define BTREE_H
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct T_Node {
+    char * key;
+    unsigned long long value;
+} T_Node;
+
+typedef struct T_B_Tree {
+    int t_size;
+    int list;
+    struct T_B_Tree * parent;
+    int capacity;
+    struct T_Node ** object;
+    struct T_B_Tree ** ptr;
+} T_B_Tree;
+
+
+// clear.c
+void DeletebTree(T_B_Tree ** tree);
+void DeleteSubbTree(T_B_Tree * tree);
+void Clear(T_B_Tree * tree);
+
+// delete.c
+void Merge(T_B_Tree * tree);
+void DeleteFromBTree(T_B_Tree * tree, char * key);
+T_B_Tree * FindNode(T_B_Tree * tree, char * key);
+void Erase(T_B_Tree * tree, char * key);
+T_B_Tree * FindLeft(T_B_Tree * tree, T_B_Tree * tar);
+T_B_Tree * FindRight(T_B_Tree * tree, T_B_Tree * tar);
+int FindDiv(T_B_Tree * parent, T_B_Tree * tar1, T_B_Tree * tar2);
+void EasyCase(T_B_Tree * tree, char * key);
+void BadCase(T_B_Tree * tree, char * key);
+
+// insert.c
+int InsertBTree(T_B_Tree * tree, char * key, unsigned long long value, T_B_Tree * left, T_B_Tree * right);
+void InsertBTreeforce(T_B_Tree * tree, char * key, unsigned long long value, T_B_Tree * left, T_B_Tree * right);
+int DivideBTree(T_B_Tree * tree);
+int AddBTree(T_B_Tree * tree, char * key, unsigned long long value, T_B_Tree * left, T_B_Tree * right);
+
+// m.c
+char Toolover(char a);
+void RegDown(char * str);
+int StrcmpReg(char * str1, char * str2);
+int BinarySearch(T_B_Tree * tree, char * key);
+T_B_Tree * CreateBTree(int t_s);
+int InBTree(T_B_Tree * tree, char * key);
+T_Node * FindSpot(T_B_Tree * tree, char * key);
+T_B_Tree * RestrictBTree(T_B_Tree * tree);
+void Swap(T_B_Tree * tree, int a, int b);
+void Swup(T_B_Tree * tree, int a, int b);
+
+// merge.c
+void Merge(T_B_Tree * tree);
+
+// saveload.c
+void Save(T_B_Tree * tree, char * file);
+void SaveSub(T_B_Tree * tree, FILE * f);
+T_B_Tree * Load(char * file);
+void LoadSub(T_B_Tree * tree, FILE * f, int size, int list);
+
+#endif
+\end{lstlisting}
+
+\begin{lstlisting}[language=C]
+//clear.c
+#include "bTree.h"
+
+void Clear(T_B_Tree * tree) {
+    for (int i = 0; i < 2 * tree->t_size; i++) {
+        free(tree->object[i]->key);
+        free(tree->object[i]);
+    }
+    free((tree)->object);
+    free((tree)->ptr);
+}
+
+void DeleteSubbTree(T_B_Tree * tree) {
+    if (tree != NULL) {
+        for (int i = 0; i < tree->capacity + 1; i++) {
+            DeleteSubbTree(tree->ptr[i]);
+            tree->ptr[i] = NULL;
+        }
+        Clear(tree);
+        free(tree);
+    }
+}
+
+void DeletebTree(T_B_Tree ** tree) {
+    if ((*tree) != NULL) {
+        for (int i = 0; i < (*tree)->capacity + 1; i++) {
+            DeleteSubbTree((*tree)->ptr[i]);
+            (*tree)->ptr[i] = NULL;
+        }
+        Clear(*tree);
+        free(*tree);
+        *tree = NULL;
+    }
+}
+\end{lstlisting}
+
+\begin{lstlisting}[language=C]
+//delete.c
+#include "bTree.h"
+
+void DeleteFromBTree(T_B_Tree * tree, char * key) {
+    T_B_Tree * ptr = FindNode(tree, key);
+    if (ptr->list) {
+        if (ptr->capacity < tree->t_size - 1 && ptr->capacity > 0) {
+            Erase(ptr, key);
+            return;
+        }
+        if (ptr->capacity > tree->t_size - 1) {
+            Erase(ptr, key);
+        } else if (ptr->capacity == tree->t_size - 1) {
+            EasyCase(ptr, key);
+        }
+    } else {
+        BadCase(ptr, key);
+    }
+}
+
+T_B_Tree * FindNode(T_B_Tree * tree, char * key) {
+    int pos = BinarySearch(tree, key);
+    if (pos < 0) {
+        return tree;
+    } else {
+        return FindNode(tree->ptr[pos], key);
+    }
+}
+
+void Erase(T_B_Tree * tree, char * key) {
+    int pos = BinarySearch(tree, key);
+    int i = -(pos + 1);
+    for (int j = i ; j < tree->capacity - 1; j++) {
+        Swup(tree, j, j + 1);
+    }
+    tree->capacity--;
+}
+
+T_B_Tree * FindLeft(T_B_Tree * tree, T_B_Tree * tar) {
+    int i = 0;
+    while (i < tree->capacity + 1) {
+        if (tree->ptr[i] == tar) {
+            return i != 0 ? tree->ptr[i - 1] : NULL;
+        }
+        i++;
+    }
+    return NULL;
+}
+
+T_B_Tree * FindRight(T_B_Tree * tree, T_B_Tree * tar) {
+    int i = 0;
+    while (i < tree->capacity + 1) {
+        if (tree->ptr[i] == tar) {
+            return i != tree->capacity ? tree->ptr[i + 1] : NULL;
+        }
+        i++;
+    }
+    return NULL;
+}
+
+int FindDiv(T_B_Tree * parent, T_B_Tree * tar1, T_B_Tree * tar2) {
+    for (int i = 0; i < parent->capacity; i++) {
+        if (parent->ptr[i] == tar1 && parent->ptr[i + 1] == tar2) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+void EasyCase(T_B_Tree * tree, char * key) {
+    if (tree->parent == NULL) {
+        Erase(tree, key);
+    } else {
+        T_B_Tree * l = FindLeft(tree->parent, tree);
+        T_B_Tree * r = FindRight(tree->parent, tree);
+        int l_div = FindDiv(tree->parent, l, tree);
+        int r_div = FindDiv(tree->parent, tree, r);
+        if (r != NULL) {
+            if (r->capacity > tree->t_size - 1) {
+                Erase(tree, key);
+                InsertBTree(tree, tree->parent->object[r_div]->key, tree->parent->object[r_div]->value, NULL, NULL);
+                strcpy(tree->parent->object[r_div]->key, r->object[0]->key);
+                tree->parent->object[r_div]->value = r->object[0]->value;
+                Erase(r, tree->parent->object[r_div]->key);
+                return;
+            }
+        }
+        if (l != NULL) {
+            if (l->capacity > tree->t_size - 1) {
+                Erase(tree, key);
+                InsertBTree(tree, tree->parent->object[l_div]->key, tree->parent->object[l_div]->value, NULL, NULL);
+                strcpy(tree->parent->object[l_div]->key, l->object[l->capacity - 1]->key);
+                tree->parent->object[l_div]->value = l->object[l->capacity - 1]->value;
+                Erase(l, l->object[l->capacity - 1]->key);
+                return;
+            }
+        }
+        if (r != NULL) {
+            if (r->capacity == tree->t_size - 1) {
+                if (tree->parent->capacity <= tree->t_size - 1) {
+                    Merge(tree->parent);
+                }
+                r = FindRight(tree->parent, tree);
+                r_div = FindDiv(tree->parent, tree, r);
+                Erase(tree, key);
+                InsertBTree(tree, tree->parent->object[r_div]->key, tree->parent->object[r_div]->value, NULL, NULL);
+                for (int i = 0; i < r->capacity; i++) {
+                    InsertBTree(tree, r->object[i]->key, r->object[i]->value, r->ptr[i], r->ptr[i + 1]);
+                }
+                r->capacity = 0;
+                Erase(tree->parent, tree->parent->object[r_div]->key);
+                tree->parent->ptr[r_div] = tree;
+                Clear(r);
+                free(r);
+                return;
+            }
+        }
+        if (l != NULL) {
+            if (l->capacity == tree->t_size - 1) {
+                if (tree->parent->capacity <= tree->t_size - 1) {
+                    Merge(tree->parent);
+                }
+                l = FindLeft(tree->parent, tree);
+                l_div = FindDiv(tree->parent, l, tree);
+                Erase(tree, key);
+                InsertBTree(l, tree->parent->object[l_div]->key, tree->parent->object[l_div]->value, NULL, NULL);
+                for (int i = 0; i < tree->capacity; i++)
+                    InsertBTree(l, tree->object[i]->key, tree->object[i]->value, tree->ptr[i], tree->ptr[i + 1]);
+                tree->capacity = 0;
+                for (int i = 0; i < l->capacity; i++)
+                    InsertBTreeforce(tree, l->object[i]->key, l->object[i]->value, l->ptr[i], l->ptr[i + 1]);
+                l->capacity = 0;
+                Erase(tree->parent, tree->parent->object[l_div]->key);
+                tree->parent->ptr[l_div] = tree;
+                Clear(l);
+                free(l);
+                return;
+            }
+        }
+    }
+    return;
+}
+
+void BadCase(T_B_Tree * tree, char * key) {
+    T_B_Tree * pivl = NULL;
+    T_B_Tree * pivr = NULL;
+
+    int pos = BinarySearch(tree, key);
+    int i = -(pos + 1);
+
+    if (tree->ptr[i]->capacity > tree->t_size - 1) {
+        pivl = tree->ptr[i];
+        pivr = tree->ptr[i + 1];
+        InsertBTree(pivr, tree->object[i]->key, tree->object[i]->value, pivl->ptr[pivl->capacity], NULL);
+        if (pivl->ptr[pivl->capacity] != NULL) {
+            pivl->ptr[pivl->capacity]->parent = pivr;
+        }
+        strcpy(tree->object[i]->key, pivl->object[pivl->capacity - 1]->key);
+        tree->object[i]->value = pivl->object[pivl->capacity - 1]->value;
+        Erase(pivl, tree->object[i]->key);
+        DeleteFromBTree(pivr, pivr->object[0]->key);
+        if (pivr->capacity == 2 * tree->t_size - 1) {
+            DivideBTree(pivr);
+        }
+        return;
+    }
+
+    if (tree->ptr[i + 1]->capacity > tree->t_size - 1) {
+        pivl = tree->ptr[i];
+        pivr = tree->ptr[i + 1];
+        InsertBTree(pivl, tree->object[i]->key, tree->object[i]->value, NULL, pivr->ptr[0]);
+        if (pivr->ptr[0] != NULL) {
+            pivr->ptr[0]->parent = pivl;
+        }
+        strcpy(tree->object[i]->key, pivr->object[0]->key);
+        tree->object[i]->value = pivr->object[0]->value;
+        Erase(pivr, tree->object[i]->key);
+        DeleteFromBTree(pivl, pivl->object[pivl->capacity - 1]->key);
+        if (pivl->capacity == 2 * tree->t_size - 1) {
+            DivideBTree(pivl);
+        }
+        return;
+    }
+
+    if (tree->ptr[i]->capacity == tree->t_size - 1 && tree->ptr[i + 1]->capacity == tree->t_size - 1) {
+        if (tree->capacity <= tree->t_size - 1) {
+            Merge(tree);
+        }
+        int pos2 = BinarySearch(tree, key);
+        i = -(pos2 + 1);
+        pivl = tree->ptr[i];
+        pivr = tree->ptr[i + 1];
+        InsertBTree(pivl, tree->object[i]->key, tree->object[i]->value, NULL, NULL);
+        for (int j = 0; j < pivr->capacity + 1; j++) {
+            if (pivr->ptr[i] != NULL) {
+                pivr->ptr[i]->parent = pivl;
+            }
+        }
+        for (int j = 0; j < pivr->capacity; j++) {
+            InsertBTreeforce(pivl, pivr->object[j]->key, pivr->object[j]->value, pivr->ptr[j], pivr->ptr[j + 1]);
+        }
+        Clear(pivr);
+        free(pivr);
+        Erase(tree, tree->object[i]->key);
+        tree->ptr[i] = pivl;
+        DeleteFromBTree(pivl, pivl->object[tree->t_size - 1]->key);
+        if (pivl->capacity == 2 * tree->t_size - 1) {
+            DivideBTree(pivl);
+        }
+        return;
+    }
+    return;
+}
+\end{lstlisting}
+
+\begin{lstlisting}[language=C]
+//insert.c
+#include "bTree.h"
+
+int InsertBTree(T_B_Tree * tree, char * key, unsigned long long value, T_B_Tree * left, T_B_Tree * right) {
+    int i = 0;
+    if (tree->capacity == 0) {
+        strcpy(tree->object[i]->key, key);
+        tree->object[i]->value = value;
+        tree->ptr[i] = left;
+        tree->ptr[i + 1] = right;
+        tree->capacity++;
+        return i;
+    }
+    for (i = 0; i < tree->capacity; i++) {
+        if (StrcmpReg(key, tree->object[i]->key) == 1) {
+            for (int j = tree->capacity; j != i; j--)
+                Swap(tree, j - 1, j);
+            strcpy(tree->object[i]->key, key);
+            tree->object[i]->value = value;
+            tree->ptr[i] = left;
+            tree->capacity++;
+            return i;
+        }
+    }
+    strcpy(tree->object[i]->key, key);
+    tree->object[i]->value = value;
+    tree->ptr[i + 1] = right;
+    tree->capacity++;
+    return i;
+}
+
+void InsertBTreeforce(T_B_Tree * tree, char * key, unsigned long long value, T_B_Tree * left, T_B_Tree * right) {
+    int pos = InsertBTree(tree, key, value, left, right);
+    tree->ptr[pos] = left;
+    tree->ptr[pos + 1] = right;
+}
+
+int DivideBTree(T_B_Tree * tree) {
+    T_B_Tree * nleft = CreateBTree(tree->t_size);
+    if (tree->list == 0) {
+        nleft->list = 0;
+    }
+    for (int i = tree->t_size; i < 2 * tree->t_size - 1; i++) {
+        InsertBTree(nleft, tree->object[i]->key, tree->object[i]->value, tree->ptr[i], tree->ptr[i + 1]);
+        if (tree->ptr[i] != NULL) {
+            tree->ptr[i]->parent = nleft;
+        }
+        if (tree->ptr[i + 1] != NULL) {
+            tree->ptr[i + 1]->parent = nleft;
+        }
+        tree->capacity--;
+    }
+    if (tree->parent == NULL) {
+        T_B_Tree * nroot = CreateBTree(tree->t_size);
+        nroot->list = 0;
+        tree->parent = nroot;
+    }
+    nleft->parent = tree->parent;
+    InsertBTreeforce(tree->parent, tree->object[tree->t_size - 1]->key, tree->object[tree->t_size - 1]->value, tree, nleft);
+    tree->capacity--;
+    if (tree->parent->capacity == 2 * tree->t_size - 1) {
+        DivideBTree(tree->parent);
+    }
+    return 1;
+}
+
+int AddBTree(T_B_Tree * tree, char * key, unsigned long long value, T_B_Tree * left, T_B_Tree * right) {
+    if (tree != NULL) {
+        if (tree->list) {
+            InsertBTree(tree, key, value, left, right);
+            if (tree->capacity == 2 * tree->t_size - 1) {
+                DivideBTree(tree);
+            }
+            return 1;
+        } else {
+            int pos = BinarySearch(tree, key);
+            return AddBTree(tree->ptr[pos], key, value, left, right);
+        }
+    }
+    return 0;
+}
+\end{lstlisting}
+
+\begin{lstlisting}[language=C]
+//m.c
+#include "bTree.h"
+
+char Toolover(char a) {
+    return a >= 'A' && a <= 'Z' ? a + ('a' - 'A') : a;
+}
+
+void RegDown(char * str) {
+    if (str == NULL) {
+        return;
+    }
+    int i = 0;
+    while (str[i] != '\0') {
+        str[i] = Toolover(str[i]);
+        i++;
+    }
+}
+
+int StrcmpReg(char * str1, char * str2) {
+    int a = strcmp(str1, str2);
+    if (a > 0) {
+        return 1;
+    } else if (a < 0) {
+        return -1;
+    }
+    return 0;
+}
+
+int BinarySearch(T_B_Tree * tree, char * key) {
+    int l = 0;
+    int r = tree->capacity - 1;
+    if (tree->capacity == 0) {
+        return 0;
+    }
+    if (tree->capacity == 1) {
+        int pos = StrcmpReg(tree->object[l]->key, key);
+        if (pos == 1) {
+            return l + 1;
+        } else if (pos == -1) {
+            return l;
+        } else {
+            return -l - 1;
+        }
+    }
+    int mid;
+    int res;
+    while (l != r - 1) {
+        mid = (l + r) / 2;
+        res = StrcmpReg(tree->object[mid]->key, key);
+        if (res == 1) {
+            l = mid;
+        } else if (res == -1) {
+            r = mid;
+        } else if (res == 0) {
+            return -mid - 1;
+        }
+    }
+    int lRes = StrcmpReg(tree->object[l]->key, key);
+    if (lRes == 0) {
+        return -l - 1;
+    } else if (lRes == -1) {
+        return l;
+    }
+    int rRes = StrcmpReg(tree->object[r]->key, key);
+    if (rRes == 0) {
+        return -r - 1;
+    } else if (rRes == 1) {
+        return r + 1;
+    }
+    return r;
+}
+
+T_B_Tree * CreateBTree(int t_s) {
+    T_B_Tree * tree = (T_B_Tree *)calloc(1, sizeof(T_B_Tree));
+    tree->t_size = t_s;
+    tree->parent = NULL;
+    tree->capacity = 0;
+    tree->list = 1;
+    tree->object = (T_Node **)calloc((2 * tree->t_size), sizeof(T_Node *));
+    tree->ptr = (T_B_Tree **)calloc((2 * tree->t_size + 1), sizeof(T_B_Tree *));
+    int i;
+    for (i = 0; i < (2 * tree->t_size); i++) {
+        tree->object[i] = (T_Node *)calloc(1, sizeof(T_Node));
+        tree->object[i]->key = (char *)calloc(257, sizeof(char));
+        tree->ptr[i] = NULL;
+    }
+    tree->ptr[i] = NULL;
+    return tree;
+}
+
+int InBTree(T_B_Tree * tree, char * key) {
+    if (tree != NULL) {
+        int pos = BinarySearch(tree, key);
+        if (pos < 0) {
+            return 1;
+        } else {
+            return InBTree(tree->ptr[pos], key);
+        }
+    } else {
+        return 0;
+    }
+}
+
+T_Node * FindSpot(T_B_Tree * tree, char * key) {
+    if (tree == NULL) {
+        return NULL;
+    }
+    int pos = BinarySearch(tree, key);
+    if (pos < 0) {
+        return tree->object[-(pos + 1)];
+    } else {
+        return FindSpot(tree->ptr[pos], key);
+    }
+}
+
+T_B_Tree * RestrictBTree(T_B_Tree * tree) {
+    if (tree->capacity == 0 && tree->ptr[0] != NULL) {
+        tree = tree->ptr[0];
+        Clear(tree->parent);
+        free(tree->parent);
+        tree->parent = NULL;
+        return RestrictBTree(tree);
+    }
+    return tree->parent != NULL ? RestrictBTree(tree->parent) : tree;
+}
+
+void Swap(T_B_Tree * tree, int a, int b) {
+    char * pivc = NULL;
+    unsigned long long pivn;
+    pivc = tree->object[a]->key;
+    pivn = tree->object[a]->value;
+    tree->object[a]->key = tree->object[b]->key;
+    tree->object[a]->value = tree->object[b]->value;
+    tree->object[b]->key = pivc;
+    tree->object[b]->value = pivn;
+    tree->ptr[b + 1] = tree->ptr[b];
+    tree->ptr[a + 1] = tree->ptr[a];
+    return;
+}
+
+void Swup(T_B_Tree * tree, int a, int b) {
+    char * pivc = NULL;
+    unsigned long long pivn;
+    pivc = tree->object[a]->key;
+    pivn = tree->object[a]->value;
+    tree->object[a]->key = tree->object[b]->key;
+    tree->object[a]->value = tree->object[b]->value;
+    tree->object[b]->key = pivc;
+    tree->object[b]->value = pivn;
+    tree->ptr[a] = tree->ptr[a + 1];
+    tree->ptr[b] = tree->ptr[b + 1];
+    return;
+}
+\end{lstlisting}
+
+\begin{lstlisting}[language=C]
+//merge.c
+#include "bTree.h"
+
+void Merge(T_B_Tree * tree) {
+    if (tree == NULL) {
+        return;
+    }
+    if (tree->parent == NULL) {
+        return;
+    }
+    T_B_Tree * l = FindLeft(tree->parent, tree);
+    T_B_Tree * r = FindRight(tree->parent, tree);
+    int l_div = FindDiv(tree->parent, l, tree);
+    int r_div = FindDiv(tree->parent, tree, r);
+
+    if (r != NULL) {
+        if (r->capacity > tree->t_size - 1) {
+            InsertBTree(tree, tree->parent->object[r_div]->key, tree->parent->object[r_div]->value, NULL, r->ptr[0]);
+            r->ptr[0]->parent = tree;
+            strcpy(tree->parent->object[r_div]->key, r->object[0]->key);
+            tree->parent->object[r_div]->value = r->object[0]->value;
+            Erase(r, tree->parent->object[r_div]->key);
+            return;
+        }
+    }
+
+    if (l != NULL) {
+        if (l->capacity > tree->t_size - 1) {
+            InsertBTree(tree, tree->parent->object[l_div]->key, tree->parent->object[l_div]->value, l->ptr[l->capacity], NULL);
+            l->ptr[l->capacity]->parent = tree;
+            strcpy(tree->parent->object[l_div]->key, l->object[l->capacity - 1]->key);
+            tree->parent->object[l_div]->value = l->object[l->capacity - 1]->value;
+            Erase(l, tree->parent->object[l_div]->key);
+            return;
+        }
+    }
+
+    if (r != NULL) {
+        if (r->capacity == tree->t_size - 1) {
+            if (tree->parent->capacity <= tree->t_size - 1) {
+                Merge(tree->parent);
+            }
+            r = FindRight(tree->parent, tree);
+            r_div = FindDiv(tree->parent, tree, r);
+            InsertBTree(tree, tree->parent->object[r_div]->key, tree->parent->object[r_div]->value, NULL, NULL);
+            for (int i = 0; i < r->capacity + 1; i++) {
+                r->ptr[i]->parent = tree;
+            }
+            for (int i = 0; i < r->capacity; i++) {
+                InsertBTreeforce(tree, r->object[i]->key, r->object[i]->value, r->ptr[i], r->ptr[i + 1]);
+            }
+            Erase(tree->parent, tree->parent->object[r_div]->key);
+            tree->parent->ptr[r_div] = tree;
+            Clear(r);
+            free(r);
+            return;
+        }
+    }
+
+    if (l != NULL) {
+        if (l->capacity == tree->t_size - 1) {
+            if (tree->parent->capacity <= tree->t_size - 1) {
+                Merge(tree->parent);
+            }
+            l = FindLeft(tree->parent, tree);
+            l_div = FindDiv(tree->parent, l, tree);
+            InsertBTree(tree, tree->parent->object[l_div]->key, tree->parent->object[l_div]->value, NULL, NULL);
+            for (int i = 0; i < l->capacity + 1; i++) {
+                l->ptr[i]->parent = tree;
+            }
+            for (int i = 0; i < l->capacity; i++) {
+                InsertBTreeforce(tree, l->object[i]->key, l->object[i]->value, l->ptr[i], l->ptr[i + 1]);
+            }
+            Erase(tree->parent, tree->parent->object[l_div]->key);
+            tree->parent->ptr[l_div] = tree;
+            Clear(l);
+            free(l);
+            return;
+        }
+    }
+}
+\end{lstlisting}
+
+\begin{lstlisting}[language=C]
+//saveload.c
+#include "bTree.h"
+
+void Save(T_B_Tree * tree, char * file) {
+    if (tree != NULL) {
+        FILE * f = fopen(file, "wb");
+        if (f == NULL) {
+            return;
+        }
+        fwrite(&(tree->t_size), sizeof(tree->t_size), 1, f);
+        SaveSub(tree, f);
+        fclose(f);
+    }
+}
+
+void SaveSub(T_B_Tree * tree, FILE * filedis) {
+    fwrite(&(tree->capacity), sizeof(tree->capacity), 1, filedis);
+    fwrite(&(tree->list), sizeof(tree->list), 1, filedis);
+    for (int i = 0; i < tree->capacity; i++) {
+        fwrite(tree->object[i]->key, 257, 1, filedis);
+        fwrite(&(tree->object[i]->value), sizeof(tree->object[i]->value), 1, filedis);
+    }
+    if (tree->list == 0) {
+        for (int i = 0; i < tree->capacity + 1; i++) {
+            SaveSub(tree->ptr[i], filedis);
+        }
+    }
+}
+
+T_B_Tree * Load(char * file) {
+    FILE * f = fopen(file, "rb");
+    if (f == NULL) {
+        return NULL;
+    }
+    int t_s;
+    fread(&(t_s), sizeof(t_s), 1, f);
+    T_B_Tree * tree = CreateBTree(t_s);
+    int size, list;
+    fread(&(size), sizeof(size), 1, f);
+    fread(&(list), sizeof(list), 1, f);
+    LoadSub(tree, f, size, list);
+    fclose(f);
+    return tree;
+}
+
+void LoadSub(T_B_Tree * tree, FILE * f, int size, int list) {
+    tree->capacity = size;
+    tree->list = list;
+    for (int i = 0; i < size; i++) {
+        fread(tree->object[i]->key, 257, 1, f);
+        fread(&(tree->object[i]->value), sizeof(tree->object[i]->value), 1, f);
+    }
+    if (list == 0) {
+        int size_, list_;
+        for (int i = 0; i < size + 1; i++) {
+            fread(&(size_), sizeof(size_), 1, f);
+            fread(&(list_), sizeof(list_), 1, f);
+            tree->ptr[i] = CreateBTree(tree->t_size);
+            tree->ptr[i]->parent = tree;
+            LoadSub(tree->ptr[i], f, size_, list_);
+        }
+    }
+}
+\end{lstlisting}
+
+\begin{lstlisting}[language=C]
+//main.c
+#include <stdlib.h>
+#include <stdio.h>
+#include "bTree.h"
+
+int main(int argc, char ** argv) {
+    int glob_size = 30;
+    char * input = (char *)calloc(257, sizeof(char));
+    unsigned long long number;
+    T_B_Tree * tree = CreateBTree(glob_size);
+    T_B_Tree * ret = NULL;
+    while (scanf("%s", input) > 0) {
+        if (strcmp(input, "+\0") == 0) {
+            scanf("%s\t%llu", input, &number);
+            RegDown(input);
+            switch (InBTree(tree, input)) {
+                case 1:
+                    printf("Exist\n");
+                    break;
+                case 0:
+                    switch (AddBTree(tree, input, number, NULL, NULL)) {
+                        case 1:
+                            tree = RestrictBTree(tree);
+                            printf("OK\n");
+                            break;
+                        case 0:
+                            printf("ERROR: in adding\n");
+                            exit(1);
+                            break;
+                    }
+                    break;
+            }
+        } else if (strcmp(input, "-\0") == 0) {
+            scanf("%s", input);
+            RegDown(input);
+            if (InBTree(tree, input)) {
+                DeleteFromBTree(tree, input);
+                tree = RestrictBTree(tree);
+                printf("OK\n");
+            } else {
+                printf("NoSuchWord\n");
+            }
+        } else if (strcmp(input, "!\0") == 0) {
+            scanf("%s", input);
+            if (strcmp(input, "Save\0") == 0) {
+                scanf("%s", input);
+                Save(tree, input);
+                printf("OK\n");
+            } else if (strcmp(input, "Load\0") == 0) {
+                scanf("%s", input);
+                ret = Load(input);
+                if (ret != NULL) {
+                    DeletebTree(&tree);
+                    tree = NULL;
+                    tree = ret;
+                    ret = NULL;
+                    printf("OK\n");
+                } else {
+                    printf("ERROR: in Load\n"); //
+                }
+            }
+        } else {
+            RegDown(input);
+            T_Node * pivet = FindSpot(tree, input);
+            if (pivet == NULL) {
+                printf("NoSuchWord\n");
+            } else {
+                printf("OK:\t%llu\n", pivet->value);
+            }
+        }
+    }
+    DeletebTree(&tree);
+    free(input);
+    return 0;
+}
+\end{lstlisting}
+
+Также представлен Makefile для компиляции всего проекта. Можно понять что все исходники находятся в папке code.
+
+\begin{alltt}
+CC = gcc
+CCFLAGS = -Wall -pedantic -std=c99 -g
+###____###
+main		: code/main.o code/m.o code/delete.o code/insert.o code/clear.o code/saveload.o code/merge.o code/bTree.h ; $(CC) $(CCFLAGS) code/*.o -o main
+m.o			: code/m.c code/bTree.h 		; $(CC) $(CCFLAGS) -c code/m.c 			; mv m.o src
+delete.o	: code/delete.c code/bTree.h 	; $(CC) $(CCFLAGS) -c code/delete.c  	; mv delete.o src
+insert.o	: code/insert.c code/bTree.h 	; $(CC) $(CCFLAGS) -c code/insert.c  	; mv insert.o src
+clear.o 	: code/clear.c code/bTree.h		; $(CC) $(CCFLAGS) -c code/clear.c  	; mv clear.o src
+main.o		: code/main.c code/bTree.h		; $(CC) $(CCFLAGS) -c code/main.c 		; mv main.o src
+saveload.o	: code/saveload.c code/bTree.h	; $(CC) $(CCFLAGS) -c code/saveload.c 	; mv saveload.o src
+merge.o		: code/merge.c code/bTree.h 	; $(CC) $(CCFLAGS) -c code/merge.c 		; mv merge.o src
+###___###
+\end{alltt}
+
+\pagebreak
+
+\section{Консоль}
+\begin{alltt}
+root@pavel:/media/sf_Coding/3_sem/Da/2lab/src# make
+gcc    -c -o code/main.o code/main.c
+gcc    -c -o code/m.o code/m.c
+gcc    -c -o code/delete.o code/delete.c
+gcc    -c -o code/insert.o code/insert.c
+gcc    -c -o code/clear.o code/clear.c
+gcc    -c -o code/saveload.o code/saveload.c
+gcc    -c -o code/merge.o code/merge.c
+gcc -Wall -pedantic -std=c99 -g code/*.o -o main
+
+root@pavel:/media/sf_Coding/3_sem/Da/2lab/src# make gen
+python generator.py
+how many iterations?	10000
+
+root@pavel:/media/sf_Coding/3_sem/Da/2lab/src# make valgrind
+valgrind -s --leak-check=full ./main < text.txt > res.txt
+==3637== Memcheck, a memory error detector
+==3637== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3637== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==3637== Command: ./main
+==3637==
+==3637==
+==3637== HEAP SUMMARY:
+==3637==     in use at exit: 0 bytes in 0 blocks
+==3637==   total heap usage: 387,870 allocs, 387,870 frees, 63,376,749 bytes allocated
+==3637==
+==3637== All heap blocks were freed -- no leaks are possible
+==3637==
+==3637== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+\end{alltt}
+
+\pagebreak

@@ -1,0 +1,9 @@
+*.out
+*.o
+.DS_Store
+tests/
+test
+ania
+1
+solution*
+literature/
